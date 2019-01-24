@@ -3,8 +3,19 @@ title: 中英文邮件祝辞
 categories: Miscellaneous
 keywords: Chinese Valedictions
 language: Chinese
-description: 之前写邮件看见同学最后致意里面写了顺祝工作商祺, 后来我就在邮件里面一直用"顺祝工作商祺", 或者是"顺祝夏安". 最近我导师提醒我说"工作商祺"不适合用在同学或者老师的信件中, 我才查了一下, 总结在下面.
+description: >-
+  之前写邮件看见同学最后致意里面写了顺祝工作商祺, 后来我就在邮件里面一直用"顺祝工作商祺", 或者是"顺祝夏安".
+  最近我导师提醒我说"工作商祺"不适合用在同学或者老师的信件中, 我才查了一下, 总结在下面.
 toc: false
+comments:
+  - author:
+      type: github
+      displayName: Cr7-joker
+      url: 'https://github.com/Cr7-joker'
+      picture: 'https://avatars0.githubusercontent.com/u/36728110?v=4&s=73'
+    content: nice
+    date: 2019-01-24T04:09:43.427Z
+
 ---
 
 之前写邮件看见同学最后致意里面写了顺祝工作商祺, 后来我就在邮件里面一直用"顺祝工作商祺", 或者是"顺祝夏安". 最近我导师提醒我说"工作商祺"不适合用在同学或者老师的信件中, 我才查了一下, 总结在下面:
