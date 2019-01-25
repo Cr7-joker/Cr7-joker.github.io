@@ -1,6 +1,6 @@
 ---
 title: Build Your Blog with GitHub Pages
-tags: Jekyll,blog
+tags: Jekyll blog
 edit: 2018-12-19
 categories: Jekyll
 status: Paused
@@ -48,7 +48,6 @@ Here is a list of files you need to modify
 3. config.yml: fill in as much as you can.
 4. index.html: fill in description and (if any) proposed posts.
 5. register at [commentit.io](https://commentit.io/). This enables your website's comment feature.
-6. secret/index.html: decrypt the page use password `ykliu`. And save the page locally. Choose your password, copy and paste the html into the input textbox, and download the page. Replace secret/index.html with the html file you downloaded. Now you have a encrypted page only you can use to encrypt your other pages!
-7. Better google discovery: google site authentication. Just go to [webmaster](https://search.google.com/search-console?hl=en) and click `add property` and download the google authentication file, put in under the root of your repo. A few days later, you should be able to see your website in google search by searching `site:your-site-name.github.io` (no space in between).
+6. Better google discovery: google site authentication. Just go to [webmaster](https://search.google.com/search-console?hl=en) and click `add property` and download the google authentication file, put in under the root of your repo. A few days later, you should be able to see your website in google search by searching `site:your-site-name.github.io` (no space in between).
 
 After that, you should be able to enjoy your blogging!
