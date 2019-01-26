@@ -1,13 +1,13 @@
 ---
 title: Build Your Blog with GitHub Pages
 tags: Jekyll blog
-edit: 2018-12-19
+edit: 2019-01-26
 categories: Jekyll
 status: Paused
 mathjax: true
 highlight: true
 mermaid: true
-description: Build Your Blog with GitHub Pages. This is a sketch of how to use my theme `PointingToTheMoon` to write your blog. This theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
+description: Build Your Blog with GitHub Pages. You can use my theme `PointingToTheMoon` to write your blog or other themes. My theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
 ---
 
 
@@ -39,7 +39,7 @@ I am going to assume that you know the basic operations of git. If not, just dow
 
 <img src="https://raw.githubusercontent.com/yk-liu/PointingToTheMoon/master/_posts/2018-12-11-Jekyll-Build/assets/GitHub-desktop.png" width="80%">
 
-# What Should I Modify
+# What Should I Modify ( If you choose my theme project )
 
 Here is a list of files you need to modify
 
