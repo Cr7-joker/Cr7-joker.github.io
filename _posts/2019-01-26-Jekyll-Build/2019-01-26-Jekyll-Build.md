@@ -45,6 +45,13 @@ Git is an open source distributed version control system that can efficiently an
 
 I am going to assume that you know the basic operations of git. If not, just download the [GitHub Desktop](https://desktop.github.com/), and do everything in GUI. For the most of bloggers, only commit and push is required. For you to publish your work, save your file in your editor, go to GitHub Desktop, commit your changes, and push.
 
+The main interface is like this:
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/Main%20interface.png" width="50%">
+
+You can use `GitHub Desktop` to clone your repositories,save the GitHub homepage repository to your local.
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone1.png" width="50%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone2.png" width="50%">
+
 # General Process
 1. Log in to your Github account
 2. Create a new repository to save personal website project
