@@ -3,7 +3,7 @@ title: Build Your Blog with GitHub Pages
 tags: Jekyll blog
 edit: 2019-01-26
 categories: Jekyll
-status: Paused
+status: Completed
 mathjax: true
 highlight: true
 mermaid: true
