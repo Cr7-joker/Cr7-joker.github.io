@@ -36,21 +36,29 @@ description: Build Your Blog with GitHub Pages. You can use my theme `PointingTo
 # About Jekyll
 
 What is Jekyll
+
 Jekyll is a simple free blog generation tool that converts plain text into static websites and blogs; since our GitHub Pages generate static pages, each time you update your blog, you need to manually change the HTML, which makes every time you write a blog. It becomes very cumbersome, and after using this tool, it will generate blog content according to the preset format, you don't need to care about the html code, just focus on the blog writing.
 
 # About Git
 
 What is Git
+
 Git is an open source distributed version control system that can efficiently and quickly handle project version management from very small to very large. Its function is similar to Svn, it is a version control tool, which can be used to write the code we write and submit our code to Github.
 
 I am going to assume that you know the basic operations of git. If not, just download the [GitHub Desktop](https://desktop.github.com/), and do everything in GUI. For the most of bloggers, only commit and push is required. For you to publish your work, save your file in your editor, go to GitHub Desktop, commit your changes, and push.
 
 The main interface is like this:
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/Main%20interface.png" width="50%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/Main%20interface.png" width="80%">
 
 You can use `GitHub Desktop` to clone your repositories,save the GitHub homepage repository to your local.
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone1.png" width="50%">
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone2.png" width="50%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone1.png" width="80%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/clone2.png" width="80%">
+
+Then commit your changes
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/commit.png" width="80%">
+
+Finally uploaded to GitHub,push!
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-26-Jekyll-Build/assets/push.png">
 
 # General Process
 1. Log in to your Github account
@@ -60,7 +68,9 @@ You can use `GitHub Desktop` to clone your repositories,save the GitHub homepage
 
 Specific operations can refer to the following link:
 [手把手教你在Github上建立自己的个人博客网站](https://blog.csdn.net/u012168038/article/details/77715439)
+
 [使用Hexo+Github一步步搭建属于自己的博客](https://www.cnblogs.com/fengxiongZz/p/7707219.html)
+
 [Github搭建个人博客](https://blog.csdn.net/xudailong_blog/article/details/78762262)
 
 # What Should I Modify ( If you choose my theme project )
