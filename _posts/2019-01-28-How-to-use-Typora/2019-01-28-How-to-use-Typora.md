@@ -38,8 +38,6 @@ Typora will give you a seamless experience as both a reader and a writer. It rem
 [toc]
 ```
 
-### 效果
-
 [TOC]
 
 ## 段落
@@ -214,11 +212,11 @@ www.baidu.com
 ![joker](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg)
 ```
 
-![joker](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg)
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg" width="70%">
 
 
 
-![illidan](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/illidan.jpg)
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/illidan.jpg" width="70%">
 
 
 
@@ -288,7 +286,7 @@ Use the `printf()` function.
 
 ##  `Preference` Panel -> `Markdown` Tab启动
 
-![markdown](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/markdown.png)
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/markdown.png" width="70%">
 
 
 
@@ -352,5 +350,5 @@ X^2^
 
 其实也可以通过鼠标右击完成，选项都有
 
-![other](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/other.png)
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/other.png" width="70%">
 
