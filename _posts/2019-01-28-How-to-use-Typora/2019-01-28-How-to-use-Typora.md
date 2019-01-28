@@ -10,7 +10,7 @@ description:Typora is the ultimate compact markdown editor that supports the edi
 
 # Why Typora?
 
-### Readable & Writable
+==Readable & Writable==
 
 Typora will give you a seamless experience as both a reader and a writer. It removes the preview window, mode switcher, syntax symbols of markdown source code, and all other unnecessary distractions. Replace them with a real live preview feature to help you concentrate the content itself.
 
@@ -211,14 +211,14 @@ www.baidu.com
 2. 用鼠标拖图片进入，然后鼠标放置其上修改
 
 ```
-![joker](Cr7-joker.github.io/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg)
+![joker](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg)
 ```
 
-![joker](D:\github\Cr7-joker.github.io\_posts\2019-01-28-How-to-use-Typora\assets\joker.jpg)
+![joker](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/joker.jpg)
 
 
 
-![illidan](D:\github\Cr7-joker.github.io\_posts\2019-01-28-How-to-use-Typora\assets\illidan.jpg)
+![illidan](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/illidan.jpg)
 
 
 
@@ -288,7 +288,7 @@ Use the `printf()` function.
 
 ##  `Preference` Panel -> `Markdown` Tab启动
 
-![markdown](D:\github\Cr7-joker.github.io\_posts\2019-01-28-How-to-use-Typora\assets\markdown.png)
+![markdown](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/markdown.png)
 
 
 
@@ -352,5 +352,5 @@ X^2^
 
 其实也可以通过鼠标右击完成，选项都有
 
-![other](D:\github\Cr7-joker.github.io\_posts\2019-01-28-How-to-use-Typora\assets\other.png)
+![other](https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-28-How-to-use-Typora/assets/other.png)
 
