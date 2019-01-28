@@ -1,8 +1,8 @@
 ---
 title: Build Your Blog with GitHub Pages
-tags: Jekyll blog
+tags: Jekyll Blog
 edit: 2019-01-26
-categories: Jekyll
+categories: Blog
 status: Completed
 mathjax: true
 highlight: true
