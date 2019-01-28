@@ -1,4 +1,12 @@
-<!doctype html>
+---
+title: How to use Typora
+tags: Blog Markdown
+edit: 2019-01-28
+categories: Blog
+status: Completed
+description: Typora is the ultimate compact markdown editor that supports the editing of mathematical formulas, can be exported to pdf and HTML, etc. I will briefly describe the basic usage of typora.
+---
+
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
