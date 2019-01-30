@@ -14,11 +14,13 @@ Some tool sites are powerful enough to replace the functionality of software and
 
 # [office-converter](https://cn.office-converter.com/)
 
+https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/01.png" width="70%">
 
 世界上最大的在线文档转换工具合集，包括文档、图形、声音、视频和压缩都可以在线转换，免费转换。
 能够输出500+种格式，输入格式2000+种格式的转换。
+
 
 
 
@@ -32,12 +34,14 @@ Some tool sites are powerful enough to replace the functionality of software and
 
 
 
+
 # [我的小书屋](http://mebook.cc/)
 
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/03.png" width="70%">
 
 喜欢看书的同学赶紧收藏了，简直是kindle用户的知音，在资源合集板块，整套的书籍，免费下载，太赞啦！
+
 
 
 
@@ -51,6 +55,7 @@ Some tool sites are powerful enough to replace the functionality of software and
 
 
 
+
 # [在线电子书转换器](http://cn.epubee.com/)
 
 
@@ -58,6 +63,7 @@ Some tool sites are powerful enough to replace the functionality of software and
 
 在线电子书格式转换，无损，免费，简单，功能强大，支持格式包括 ePub, PDF, Mobi,AZW，AZW3，AZW4，htmlz，PRC，TXT，LIT，LRF，FB2，PDB, TXT等。
 支持单个文件大小高达60MB,可批量上传处理。
+
 
 
 
@@ -71,6 +77,7 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
 # [字客网](https://www.fontke.com/)
 
 
@@ -78,6 +85,7 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 强大的字体分享网站，该网站有庞大的字体资源，分类详细很人性化，
 支持图片搜索字体，创新的多重搜索技术，让你快速找到所需要的字体。
+
 
 
 
@@ -91,6 +99,7 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
 # [音乐聚合搜索](http://www.gequdaquan.net/gqss/)
 
 
@@ -100,12 +109,14 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
 # [Weibo dang](http://weibodang.cn/)
 
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/10.jpg" width="70%">
 
 在线视频解析下载网站，支持下载抖音、知乎、音悦台、网易公开课、PP视频、优酷视频、微博视频等多个平台，复制连接到该网站输入框即可。
+
 
 
 
@@ -120,8 +131,10 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
 # 写在最后
 
 你比较喜欢哪个网站呢，欢迎评论区留言
-如果你有更好的实用网站，也迎留言分享给大家。
+
+如果你有更好的实用网站，也欢迎留言分享给大家。
 
