@@ -14,12 +14,13 @@ Some tool sites are powerful enough to replace the functionality of software and
 
 # [office-converter](https://cn.office-converter.com/)
 
-https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/01.png" width="70%">
 
-世界上最大的在线文档转换工具合集，包括文档、图形、声音、视频和压缩都可以在线转换，免费转换。
+**世界上最大的在线文档转换工具合集**，包括文档、图形、声音、视频和压缩都可以在线转换，**免费转换**。
 能够输出500+种格式，输入格式2000+种格式的转换。
+
+
 
 
 
@@ -29,8 +30,10 @@ https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/02.png" width="70%">
 
-高质量的工具集合网站，有超多的简单实用的在线工具。
-包括图片视频、网络工具、教学学习，生活日常，就是一个万能工具包。
+**高质量的工具集合网站**，有超多的简单实用的在线工具。
+包括图片视频、网络工具、教学学习，生活日常，就是一个**万能工具包**。
+
+
 
 
 
@@ -40,7 +43,10 @@ https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/03.png" width="70%">
 
-喜欢看书的同学赶紧收藏了，简直是kindle用户的知音，在资源合集板块，整套的书籍，免费下载，太赞啦！
+喜欢看书的同学赶紧收藏了，简直是kindle用户的知音，在资源合集板块，整套的书籍，**免费下载**，太赞啦！
+
+
+
 
 
 
@@ -50,8 +56,11 @@ https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/04.png" width="70%">
 
-网站收录了16万+的世界著名画家的画，从文艺复兴开始，西方著名画家的作品基本全收录。
-都是高清大图哦！可作为图片素材使用。
+**网站收录了16万+的世界著名画家的画**，从文艺复兴开始，西方著名画家的作品基本全收录。
+都是高清大图哦！可作为**图片素材**使用。
+
+
+
 
 
 
@@ -61,8 +70,11 @@ https://cn.office-converter.com/
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/05.png" width="70%">
 
-在线电子书格式转换，无损，免费，简单，功能强大，支持格式包括 ePub, PDF, Mobi,AZW，AZW3，AZW4，htmlz，PRC，TXT，LIT，LRF，FB2，PDB, TXT等。
+**在线电子书格式转换**，无损，免费，简单，功能强大，支持格式包括 ePub, PDF, Mobi,AZW，AZW3，AZW4，htmlz，PRC，TXT，LIT，LRF，FB2，PDB, TXT等。
 支持单个文件大小高达60MB,可批量上传处理。
+
+
+
 
 
 
@@ -78,6 +90,9 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
+
+
 # [字客网](https://www.fontke.com/)
 
 
@@ -89,13 +104,19 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
+
+
 # [优品PPT](http://www.ypppt.com/)
 
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/08.jpg" width="70%">
 
 一个有情怀的免费PPT模板下载网站。
-包括PPT素材、PPT模板、PPT图标表、PPT教程等各类资源，免费下载使用。
+包括PPT素材、PPT模板、PPT图标表、PPT教程等各类资源，**免费下载使用**。
+
+
+
 
 
 
@@ -105,7 +126,10 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/09.jpg" width="70%">
 
-一个使用简洁的在线音乐网站，很多歌曲都可以免费试听和下载。
+一个使用简洁的在线音乐网站，**很多歌曲都可以免费试听和下载**。
+
+
+
 
 
 
@@ -120,6 +144,9 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+
+
+
 # [百度网盘之家](http://wowenda.com/)
 
 
@@ -128,6 +155,8 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 该网站是百度网盘资源搜集整理中心，你可以直接搜到百度网盘资源的各种内容，软件、模板、影视剧、小说、电子书等。
 太厉害了，简直就是百度网盘搜索引擎啊！
 （部分分享会显示失效，但不影响使用）
+
+
 
 
 
