@@ -93,7 +93,7 @@ https://www.fontke.com/
 
 http://www.ypppt.com/
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/08.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/08.jpg" width="70%">
 
 一个有情怀的免费PPT模板下载网站。
 包括PPT素材、PPT模板、PPT图标表、PPT教程等各类资源，免费下载使用。
@@ -104,7 +104,7 @@ http://www.ypppt.com/
 
 http://www.gequdaquan.net/gqss/
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/09.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/09.jpg" width="70%">
 
 一个使用简洁的在线音乐网站，很多歌曲都可以免费试听和下载。
 
@@ -114,7 +114,7 @@ http://www.gequdaquan.net/gqss/
 
 http://weibodang.cn/
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/10.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/10.jpg" width="70%">
 
 在线视频解析下载网站，支持下载抖音、知乎、音悦台、网易公开课、PP视频、优酷视频、微博视频等多个平台，复制连接到该网站输入框即可。
 
