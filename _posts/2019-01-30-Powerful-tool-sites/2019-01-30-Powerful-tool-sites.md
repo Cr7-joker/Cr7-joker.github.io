@@ -4,10 +4,10 @@ tags: Tool
 edit: 2019-01-30
 categories: Tool
 status: Completed
-description: Sharing eleven powerful tool websites is very practical in work and study.Some tool sites are powerful enough to replace the functionality of software and reduce the cumbersome operation of installing computer software.
+description: Sharing some powerful tool websites is very practical in work and study.Some tool sites are powerful enough to replace the functionality of software and reduce the cumbersome operation of installing computer software.
 ---
 
-Sharing 11 powerful tool websites is very practical in work and study.
+Sharing some powerful tool websites is very practical in work and study.
 Some tool sites are powerful enough to replace the functionality of software and reduce the cumbersome operation of installing computer software.
 
 
@@ -161,9 +161,26 @@ BiliBili、AcFun、优酷网、腾讯视频、微博秒拍、搜狐、乐视、�
 
 
 
+# [正版中国](https://getitfree.cn/)
+
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-01-30-Eleven-powerful-tool-sites/assert/12.jpg" width="70%">
+
+一个提供各种**正版软件**的**限时免费/折扣信息**以及**永久免费**的相关软件信息的网站。
+
+网站内还提供比较大项的分类，电脑端（包含win以及mac端）、手机端（包含安卓以及ios端）还有win10的UWP应用。
+
+
+
+
+
+
+
 # 写在最后
 
-你比较喜欢哪个网站呢，欢迎评论区留言
+以后我也会随时更新有用的网站！
+
+你比较喜欢哪个网站呢，欢迎评论区留言。
 
 如果你有更好的实用网站，也欢迎留言分享给大家。
 
