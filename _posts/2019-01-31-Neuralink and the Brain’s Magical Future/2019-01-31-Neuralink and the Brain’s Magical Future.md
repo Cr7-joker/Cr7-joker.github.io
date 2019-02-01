@@ -14,11 +14,11 @@ description: The only way out for mankind，it will definitely change your world
 
 	
 	
-[《人类唯一的出路》](https://www.zhihu.com/collection/274862777)
+[《人类唯一的出路》](https://www.zhihu.com/question/299741613/answer/517324284)
 
 	
 	
-其英文原著：[《Neuralink and the Brain’s Magical Future》](https://waitbutwhy.com/2017/04/neuralink.html)
+其英文原作：[《Neuralink and the Brain’s Magical Future》](https://waitbutwhy.com/2017/04/neuralink.html)
 
 
 	
