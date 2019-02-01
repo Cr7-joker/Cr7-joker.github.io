@@ -1,7 +1,7 @@
 ---
 title: Three signs that a person begins to abolish
 tags: Person Habit
-edit: 2019-01-30
+edit: 2019-02-01
 categories: Miscellaneous
 status: Completed
 description: How is a man decadent step by step? After reading this,you may understand and change yourself.

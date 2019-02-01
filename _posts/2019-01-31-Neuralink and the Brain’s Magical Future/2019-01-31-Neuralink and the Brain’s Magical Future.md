@@ -1,7 +1,7 @@
 ---
 title: Neuralink and the Brain’s Magical Future
 tags: Future Neuralink Brain
-edit: 2019-01-30
+edit: 2019-01-31
 categories: Technology
 status: Completed
 description: The only way out for mankind，it will definitely change your worldview！！！
