@@ -1,6 +1,6 @@
 ---
 title: Two minutes of fitness
-tags: Person Habit Health Fitness
+tags: Person Habit Health
 edit: 2019-02-03
 categories: Fitness
 status: Completed
