@@ -1,5 +1,5 @@
 ---
-title: Two%20minutes%20of%20fitness
+title: Two minutes of fitness
 tags: Person Habit Health Fitness
 edit: 2019-02-03
 categories: Fitness
