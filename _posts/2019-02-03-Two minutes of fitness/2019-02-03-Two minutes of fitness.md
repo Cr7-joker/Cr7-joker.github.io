@@ -275,4 +275,4 @@ HIIT 虽好，但不是人人都方便去健身房踩动感单车。为了让所
 
 
 
-# [The Truth About Getting Fit--视频链接]([The Truth About Getting Fit] (https://www.bilibili.com/video/av25925410/))
+# [The Truth About Getting Fit--视频链接](https://www.bilibili.com/video/av25925410/)
