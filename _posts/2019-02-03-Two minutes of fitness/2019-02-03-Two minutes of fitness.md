@@ -29,7 +29,7 @@ description: BBC Heart-broken Experiment:Running 45 minutes a day is not as good
 
 任何想要运动又不想费力的人，一定不能错过这部纪录片！
 
-## **走 1 万步，不如 3000 步**
+# **走 1 万步，不如 3000 步**
 
 纪录片一开始，迈克尔就要 **推翻** 一个流行的说法：“每天走一万步，就可以保持年轻健康”。
 
