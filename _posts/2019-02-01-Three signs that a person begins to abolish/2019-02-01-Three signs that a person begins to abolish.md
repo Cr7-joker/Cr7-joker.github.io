@@ -7,7 +7,7 @@ status: Completed
 description: How is a man decadent step by step? After reading this,you may understand and change yourself.
 ---
 
-# 	
+# .
 
 作家李尚龙说：“在大城市里，搞废一个人的方式特别简单。给你一个安静狭小的空间，给你一根网线，最好再加一个外卖电话。好了，你开始废了。”
 
@@ -37,7 +37,7 @@ description: How is a man decadent step by step? After reading this,you may unde
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-01-Three signs that a person begins to abolish/assert/01.jpg" width="70%">
 
-# 	
+# .
 
 记得以前去学校图书馆学习，旁边的位置坐了一位男生。
 
@@ -105,7 +105,7 @@ description: How is a man decadent step by step? After reading this,you may unde
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-01-Three signs that a person begins to abolish/assert/02.jpg" width="70%">
 
-# 	
+# .
 
 很早之前，网上流传着一段高铁吃泡面被骂的视频。
 
@@ -192,7 +192,7 @@ description: How is a man decadent step by step? After reading this,you may unde
 
 真正成熟的人，一定是有能力控制自己情绪的人。
 
-# 	
+# .
 
 在国外有一个医学研究，工作人员询问了一百个在医院奄奄一息的老人：“你这辈子最大的遗憾是什么？”
 
