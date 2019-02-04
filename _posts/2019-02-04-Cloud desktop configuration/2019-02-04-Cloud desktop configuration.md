@@ -17,9 +17,9 @@ description: Win10多用户远程登录，不同的电脑使用不同的账号�
 
 点击设置，搜索用户
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/01.png" width="70">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/01.png" width="20">
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/02.png" width="70">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/02.png" width="100">
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/03.png" width="70">
 
@@ -71,7 +71,7 @@ description: Win10多用户远程登录，不同的电脑使用不同的账号�
 
 下载一个
 
-链接：链接: https://pan.baidu.com/s/1LRGmZOZTj2WFilUOAhoCbA 
+[链接](https://pan.baidu.com/s/1LRGmZOZTj2WFilUOAhoCbA) 
 
 提取码: wi3g 
 
