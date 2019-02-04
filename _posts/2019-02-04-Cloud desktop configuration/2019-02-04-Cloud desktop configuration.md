@@ -17,15 +17,15 @@ description: Win10多用户远程登录，不同的电脑使用不同的账号�
 
 点击设置，搜索用户
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/01.png" width="20">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/01.png">
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/02.png" width="100">
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/03.png" width="70">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/03.png" width="10">
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/04.png" width="70">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/04.png" width="100">
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/05.png" width="70">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-04-Cloud%20desktop%20configuration/assert/05.png">
 
 点击下一步，一个普通用户就创建完成了。
 
