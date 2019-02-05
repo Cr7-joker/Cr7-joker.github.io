@@ -32,11 +32,11 @@ $$
 
 * In(V<sub>i</sub>),Out(V<sub>i</sub>):对于句子来说没有推荐和被推荐的区分，即每个句子都相邻
 
-* ω<sub>ji</sub>-句子j和句子i之间的相似度 <\br>
+* ω<sub>ji</sub>-句子j和句子i之间的相似度 </br>
   $$
   Similarity(S_i,S_j)=\frac{|\{w_k|w_k\in S_i\&w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}
   $$
-  <\br>
+  </br>
   分子为两个句子中共同出现的词数, S<sub>i</sub>S<sub>j</sub>分别为两个句子中的单词总数
 
 * WS(V<sub>i</sub>)(WeightSum)-每个句子的分数，初始值为一个常数，从第一句开始计算，不断迭代，直到最终每一个句子的分数不再变化为止(即小于一个极小值)
@@ -66,9 +66,9 @@ from nltk.corpus import stopwords #nltk中的停用词库
 
 class TextRank(object):
 	def __init__(self,filename,d,min,n):   #后两个参数为可变参数，可调参优化算法
-        self.filename = filename #初始化需要读取的文本的Path
-        self.d = d #初始化阻尼系数
-        self.min = min #初始化判断是否继续迭代的误差最小值
+                    self.filename = filename #初始化需要读取的文本的Path
+                            self.d = d #初始化阻尼系数
+                            self.min = min #初始化判断是否继续迭代的误差最小值
             self.n = n #摘要所需要的句子数
         
 #读取文本内容
