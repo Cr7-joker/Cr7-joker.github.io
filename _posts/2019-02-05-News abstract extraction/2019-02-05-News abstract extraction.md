@@ -95,7 +95,7 @@ class TextRank(object):
     		return Cleansentences
     
 #进行分词并去停用词
-	def WordTokenpro(self,sentence):
+    def WordTokenpro(self,sentence):
             #stopwordlist = set(stopwords.words('english'))
             # 在很多新闻中去掉了nltk停用词则公式中分母可能会为0
             #如果在专业性的英文中则可以选用
@@ -106,11 +106,11 @@ class TextRank(object):
     
 #计算两个句子的相似度
     def Sentsimilarity(self,sent1,sent2):
-        count = 0
-        for word in sent1:
-        if word in sent2:
-        	count = count + 1
-        return (count/math.log(len(sent1)) * math.log(len(sent2)))
+            count = 0
+            for word in sent1:
+            if word in sent2:
+            	count = count + 1
+            return (count/math.log(len(sent1)) * math.log(len(sent2)))
 
 #创建相似度矩阵
 	def SimilarMatrix(self,sentences):
@@ -119,7 +119,7 @@ class TextRank(object):
             for i,j in product(range(N),repeat=2):
                 if(i != j):
     			Matrix[i][j] = self.Sentsimilarity(sentences[i],sentences[j])
-    	return Matrix
+            return Matrix
     
 #TextRank公式计算
 	def Culculate(self,Matrix,scores,i):
@@ -131,10 +131,10 @@ class TextRank(object):
                 fraction = Matrix[j][i] * scores[j]
                 # 计算分母
                 for k in range(len(Matrix)):
-    			denominator += Matrix[j][k]
-    		Sump += fraction / denominator
-    	Sum = (1-self.d) + self.d * Sump
-    	return Sum
+                    denominator += Matrix[j][k]
+                Sump += fraction / denominator
+            Sum = (1-self.d) + self.d * Sump
+            return Sum
     
 #判断是否需要继续迭代
 	def Different(self,scores,prevent_scores):
