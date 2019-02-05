@@ -32,11 +32,11 @@ $$
 
 * In(V<sub>i</sub>),Out(V<sub>i</sub>):对于句子来说没有推荐和被推荐的区分，即每个句子都相邻
 
-* ω<sub>ji</sub>-句子j和句子i之间的相似度 <br/>
+* ω<sub>ji</sub>-句子j和句子i之间的相似度 <br/><br/>
   $$
   Similarity(S_i,S_j)=\frac{|\{w_k|w_k\in S_i\&w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}
   $$
-  <br/>
+  <br/><br/>
   分子为两个句子中共同出现的词数, S<sub>i</sub>S<sub>j</sub>分别为两个句子中的单词总数
 
 * WS(V<sub>i</sub>)(WeightSum)-每个句子的分数，初始值为一个常数，从第一句开始计算，不断迭代，直到最终每一个句子的分数不再变化为止(即小于一个极小值)
@@ -106,10 +106,10 @@ class TextRank(object):
     
 #计算两个句子的相似度
     def Sentsimilarity(self,sent1,sent2):
-            count = 0
-            for word in sent1:
-        	if word in sent2:
-        		count = count + 1
+        count = 0
+        for word in sent1:
+        if word in sent2:
+        	count = count + 1
         return (count/math.log(len(sent1)) * math.log(len(sent2)))
 
 #创建相似度矩阵
@@ -118,8 +118,8 @@ class TextRank(object):
             Matrix = [[0.0 for _ in range(N)]for _ in range(N)] #创建N X N的浮点数列表
             for i,j in product(range(N),repeat=2):
                 if(i != j):
-    				Matrix[i][j] = self.Sentsimilarity(sentences[i],sentences[j])
-    		return Matrix
+    			Matrix[i][j] = self.Sentsimilarity(sentences[i],sentences[j])
+    	return Matrix
     
 #TextRank公式计算
 	def Culculate(self,Matrix,scores,i):
@@ -131,16 +131,16 @@ class TextRank(object):
                 fraction = Matrix[j][i] * scores[j]
                 # 计算分母
                 for k in range(len(Matrix)):
-    				denominator += Matrix[j][k]
-    			Sump += fraction / denominator
-    		Sum = (1-self.d) + self.d * Sump
-    		return Sum
+    			denominator += Matrix[j][k]
+    		Sump += fraction / denominator
+    	Sum = (1-self.d) + self.d * Sump
+    	return Sum
     
 #判断是否需要继续迭代
 	def Different(self,scores,prevent_scores):
             flag = False
     		for i in range(len(scores)):
-    			if(math.fabs(scores[i]-prevent_scores[i]) >= self.min):
+    		if(math.fabs(scores[i]-prevent_scores[i]) >= self.min):
                     flag = True
                     break
     		return flag
