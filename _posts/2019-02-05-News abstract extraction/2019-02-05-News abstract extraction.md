@@ -95,7 +95,7 @@ class TextRank(object):
     		return Cleansentences
     
 #进行分词并去停用词
-    def WordTokenpro(self,sentence):
+	def WordTokenpro(self,sentence):
             #stopwordlist = set(stopwords.words('english'))
             # 在很多新闻中去掉了nltk停用词则公式中分母可能会为0
             #如果在专业性的英文中则可以选用
@@ -105,11 +105,11 @@ class TextRank(object):
             return Words
     
 #计算两个句子的相似度
-    def Sentsimilarity(self,sent1,sent2):
+    	def Sentsimilarity(self,sent1,sent2):
             count = 0
             for word in sent1:
-            if word in sent2:
-            	count = count + 1
+            	if word in sent2:
+            		count = count + 1
             return (count/math.log(len(sent1)) * math.log(len(sent2)))
 
 #创建相似度矩阵
@@ -139,18 +139,18 @@ class TextRank(object):
 #判断是否需要继续迭代
 	def Different(self,scores,prevent_scores):
             flag = False
-    		for i in range(len(scores)):
+	    for i in range(len(scores)):
                 if(math.fabs(scores[i]-prevent_scores[i]) >= self.min):
                     flag = True
-                    break
-    		return flag
+                    break	
+	    return flag
     
 #迭代计算每个句子的分数
 	def Sentscore(self,Matrix):
             scores = [1.0 for _ in range(len(Matrix))]
             prevent_scores = [0.0 for _ in range(len(Matrix))]
             while self.Different(scores,prevent_scores):
-    			for i in range(len(scores)):
+    		for i in range(len(scores)):
     				prevent_scores[i] = scores[i]
                 for j in range(len(scores)):
     				scores[j] = self.Culculate(Matrix,scores,j)
@@ -164,8 +164,8 @@ def main():
     cleansentences = Test.CleanSent(sentences)
     wordSets = []
     for sentence in cleansentences:
-		sentence = Test.WordTokenpro(sentence)
-		wordSets.append(sentence)
+	sentence = Test.WordTokenpro(sentence)
+	wordSets.append(sentence)
     Matrix = Test.SimilarMatrix(wordSets)
     scores = Test.Sentscore(Matrix)
     print(scores)
