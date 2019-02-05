@@ -64,8 +64,7 @@ from nltk.corpus import stopwords #nltk中的停用词库
 
 
 class TextRank(object):
-	def __init__(self,filename,d,min,n):
-		#后两个参数为可变参数，可调参优化算法
+	def __init__(self,filename,d,min,n):   #后两个参数为可变参数，可调参优化算法
         self.filename = filename #初始化需要读取的文本的Path
         self.d = d #初始化阻尼系数
         self.min = min #初始化判断是否继续迭代的误差最小值
@@ -105,9 +104,9 @@ class TextRank(object):
         return Words
     
 #计算两个句子的相似度
-	def Sentsimilarity(self,sent1,sent2):
-    count = 0
-    for word in sent1:
+    def Sentsimilarity(self,sent1,sent2):
+        count = 0
+        for word in sent1:
     	if word in sent2:
     		count = count + 1
     return (count/math.log(len(sent1)) * math.log(len(sent2)))
@@ -169,8 +168,7 @@ def main():
     Matrix = Test.SimilarMatrix(wordSets)
     scores = Test.Sentscore(Matrix)
     print(scores)
-    max_index = map(scores.index, heapq.nlargest(Test.n, scores)) #找出分数最大的n个句子的
-索引
+    max_index = map(scores.index, heapq.nlargest(Test.n, scores)) #找出分数最大的n个句子的索引
 	for index in list(max_index): #输出分数最大的n个句子
 		print(sentences[index])
         
