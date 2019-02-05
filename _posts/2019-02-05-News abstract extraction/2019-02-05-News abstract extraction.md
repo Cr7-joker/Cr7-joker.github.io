@@ -154,7 +154,7 @@ class TextRank(object):
     				prevent_scores[i] = scores[i]
                 for j in range(len(scores)):
     				scores[j] = self.Culculate(Matrix,scores,j)
-    		return scores
+    	    return scores
     
 #主函数
 def main():
