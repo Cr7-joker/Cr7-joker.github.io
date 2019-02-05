@@ -23,6 +23,17 @@ PageRank 是根据网页之间相互的超链接计算网页重要性的技术�
 ### TextRank公式：
 
 $$
-WS(V_i)=(1-d)+d\cdot
+WS(V_i)=(1-d)+d\cdot\sum_{V_j\in In(V_i)}{\frac{W_{ji}}{\sum_{V_k\in Out(V_j)}w_{jk}}WS(V_j)}
 $$
 
+* V~i~-第i个句子
+
+* d-阻尼系数，保证每个句子由一定的权重值，一般取0.85
+
+* In(V~i~),Out(V~i~):对于句子来说没有推荐和被推荐的区分，即每个句子都相邻
+
+* ω~ji~-句子j和句子i之间的相似度
+  $$
+  Similarity(S_i,S_j)=\frac{}{}
+  $$
+  
