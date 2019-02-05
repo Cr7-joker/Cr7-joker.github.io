@@ -69,13 +69,13 @@ class TextRank(object):
         self.filename = filename #初始化需要读取的文本的Path
         self.d = d #初始化阻尼系数
         self.min = min #初始化判断是否继续迭代的误差最小值
-        self.n = n #摘要所需要的句子数
+            self.n = n #摘要所需要的句子数
         
 #读取文本内容
 	def FileRead(self):
-        f = open(self.filename,encoding='UTF-8')
-        text = f.read()
-        return text
+            f = open(self.filename,encoding='UTF-8')
+            text = f.read()
+            return text
     
 #进行句子分割
 	def SentenceToken(self,text):
