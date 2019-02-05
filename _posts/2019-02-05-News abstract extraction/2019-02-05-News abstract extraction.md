@@ -140,7 +140,7 @@ class TextRank(object):
 	def Different(self,scores,prevent_scores):
             flag = False
     		for i in range(len(scores)):
-    		if(math.fabs(scores[i]-prevent_scores[i]) >= self.min):
+                if(math.fabs(scores[i]-prevent_scores[i]) >= self.min):
                     flag = True
                     break
     		return flag
@@ -149,11 +149,11 @@ class TextRank(object):
 	def Sentscore(self,Matrix):
             scores = [1.0 for _ in range(len(Matrix))]
             prevent_scores = [0.0 for _ in range(len(Matrix))]
-                while self.Different(scores,prevent_scores):
-    				for i in range(len(scores)):
-    					prevent_scores[i] = scores[i]
-                    for j in range(len(scores)):
-    					scores[j] = self.Culculate(Matrix,scores,j)
+            while self.Different(scores,prevent_scores):
+    			for i in range(len(scores)):
+    				prevent_scores[i] = scores[i]
+                for j in range(len(scores)):
+    				scores[j] = self.Culculate(Matrix,scores,j)
     		return scores
     
 #主函数
@@ -170,8 +170,8 @@ def main():
     scores = Test.Sentscore(Matrix)
     print(scores)
     max_index = map(scores.index, heapq.nlargest(Test.n, scores)) #找出分数最大的n个句子的索引
-	for index in list(max_index): #输出分数最大的n个句子
-		print(sentences[index])
+    for index in list(max_index): #输出分数最大的n个句子
+        print(sentences[index])
         
 if __name__ == '__main__':
     main()
