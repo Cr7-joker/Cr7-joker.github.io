@@ -346,7 +346,7 @@ MMR是Maximal Marginal Releuance的缩写，中文为最大边界相关算法或
 
 •当我们将MMR用于新闻摘要提取时，可以将Query看做是整篇文档，对公式稍作修改，变成下面这个样子：
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-05-News%20abstract%20extraction/assert/MMR2.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-05-News%20abstract%20extraction/assert/MMR2.jpg" width="70%">
 
 •左边的score计算的是句子的重要性分值，右边的计算的是句子与所有已经被选择成为摘要的句子之间的相似度最大值，注意这里的是负号，说明成为摘要的句子间的相似度越小越好。此处体现了MMR的算法原理，即均衡考虑了文章摘要的重要性和多样性。这种摘要提取方式与textrank不同，textrank只取全文的重要句子进行排序形成摘要，忽略了其多样性。
 
