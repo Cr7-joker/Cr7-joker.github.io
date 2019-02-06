@@ -356,9 +356,9 @@ MMR是Maximal Marginal Releuance的缩写，中文为最大边界相关算法或
 
 其中，相似度是将句子转换为有tfidf权重的词袋模型后计算余弦相似度。对Di句子重要性的衡量采用Di与整个文档的相似度。
 
-### 代码实现
+## 代码实现
 
-#### 英文
+### 英文
 
 ```python
 import nltk
@@ -413,7 +413,7 @@ if __name__ == '__main__':
 
 ```
 
-#### 中文
+### 中文
 
 ```python
 import jieba
