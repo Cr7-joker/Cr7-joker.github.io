@@ -522,7 +522,7 @@ $$
 
 {j：t<sub>i</sub>∈d<sub>j</sub>}：包含词语的文件数目（即的文件数目）如果该词语不在语料库中，就会导致分母为零，因此一般情况下使用**1+\|{d∈D:t∈d}\|**作为分母。
 
-然后再计算TF与IDF的乘积。
+然后再计算TF与IDF的乘积: 
 $$
 tf_idf_{i,j}=tf_{i,j}\times idf_i
 $$
@@ -609,3 +609,68 @@ for i, count in enumerate(countlist):
 
 ```
 
+
+
+# 场景比较分析
+
+|          |                           科技新闻                           |                           体育新闻                           |                           娱乐新闻                           |                           军事新闻                           |
+| :------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|   特点   |                    新闻性，科学性，通俗性                    |                    娱乐性，国际性，情感性                    |                        故事性，情节性                        |                    思想性，新鲜性，显著性                    |
+|   MMR    | 摘要相对全面，不仅对于反复提及科技产品或成果本身有足够的摘要，也对重要的有概括意义的相关结论有一定的摘要。 | 摘要更偏重对体育赛事的数据和过程进行描述，特别是在重要位置的比赛信息，能比较全面的概括新闻中对比赛过程的描写。 | 摘要比较简洁能够抓住核心语句，特别是新闻热点和矛盾点所在，不过摘要没法展示整个新闻中情节的发展。 | 摘要非常全面，围绕着关键事件和事物有足够多的摘要，当然会有一些与核心事件无关紧要的摘要出现。 |
+| TextRank | 摘要更偏重对科技产品或成果本身描述，能够较完整的描述新闻中提及的科技产品或成果的特点，特性，参数等信息，但对一些结论不会做描述。 | 摘要更加简洁，更加有针对性，特别是新闻中反复出现的名词，会有更多与之相关的摘要，摘要能够对某一方面有充分的概括。 | 摘要更加全面，对于涉及主要事件和主要人物的片段，都会有摘要，使得摘要能够大致反映新闻中情节的发展，而且对于核心的地方也有足够的描述。 | 摘要比较简洁，对于核心事件或事物能够有相对全面的描述，但是新闻中围绕核心事件或事物的一些附加片段不会有太多的描述。 |
+
+
+
+# 算法比较
+
+**中文新闻：**
+
+```
+                        部分标准延迟无碍商用步伐 5G流量单价将低于4G
+	2019年三大运营商将全面实现5G预商用，昨天北京移动在本市三大运营商中率先成立了5G产业联盟。记者还获悉，近日5G标准推迟一事其实系“标题党”，并不会影响5G商用时间表，同时5G流量单价相比4G肯定会降低。
+	5G技术将应用于北京冬奥
+	5G既不是运营商的独角戏，更不是运营商和手机厂商的双簧戏，而是全社会共同参与的一场大戏。当日，北京移动携手北汽、新奥特视频等众多伙伴共同成立了5G产业联盟。该联盟将面向包括视频娱乐、交通、医疗、智慧城市等在内的九大领域，促进北京5G产业相关主体间的合作交流，推动供需对接、技术革新，实现5G行业应用方案的顺利落地。
+	那么首批5G技术将被用在哪里？中国联通当日给出了答案——5G技术将赋能北京冬奥会，使其成为一届智慧冬奥会。
+	中国联通将通过智慧冬奥战略，借助5G技术，为运动员、观众、媒体、业主和相关行业人员提供5G网络服务和智慧应用。在高速率、低延时、大连接的5G网络保障下，借助虚拟化，人工智能，边缘计算等技术，为冬奥打造智慧应用平台，提供360度全景直播、VR沉浸式体验、赛场医疗等智慧应用。
+	为此，中国联通将为冬奥会专项投入超过15亿元资金，用于升级和新建以5G为主的通信网络，力争实现极致用户体验、优质赛事服务和智能场馆运营三大目标。
+	5G资费单价将比4G低
+	5G功能强大，投入商用后资费到底贵不贵，是消费者最关心的。对此，中国移动通信研究院产业与业务合作部总经理杨光认为，5G是一次技术上的升级，通信资费的单价肯定会降低。
+	杨光表示，在2G、3G和4G的升级过程，这种价格降低的趋势已经非常明显，数据流量和语音的价格一直在持续下降。在5G实际应用后，运营商也会继续响应国家提速降费的要求。虽然具体降幅还不能准确预测，不过可以肯定的是，5G流量单价肯定会比4G降低。
+	有专家分析，这也就意味着只要用户不是用5G进行大批量下载，那么5G流量的性价比应该高于4G。
+	除了运营商，大型手机厂商也在极力推动5G相关应用的开发，并降低成本。当日OPPO在京举行开发者大会。OPPO副总裁段要辉称，今年OPPO的研发投入已经从去年的40亿元增加到100亿元，就是为了在5G和AI上做出更多探索，目前OPPO包括5G等在内的专利和技术积累已经超过2.7万项。
+	为了迎接明年就要到来的5G时代，段要辉披露OPPO明年还将推出“引力计划”，再专门投入10亿元的成本，携手全球合作伙伴与开发者，针对包括5G场景下的应用与游戏等进行多方面合作。 
+	个别标准延迟不影响商用
+	3GPP是国际通信行业标准化组织，负责为5G制定全球统一的技术规范。近日有消息传出，5G标准出台要推迟3个月，这会影响国内的5G部署和大家用5G手机刷新闻的美好愿景吗？
+	来自中国移动通信研究院的徐晓东同时身兼3GPP RAN项目副主席一职，他解释，其实这并非5G整体标准推迟出炉，而只是其中“R15 late drop”标准将推迟3个月。所谓late drop只是5G标准中的两个可选功能。由于其可能影响4G网络的稳定性和可靠性，因此运营商在初期采用这两种架构部署5G的可能性微乎其微。此事并不会影响中国移动的5G部署计划和原有时间点。换言之，5G商用并不会受到影响。
+	实际上，目前中国移动已建成世界上规模最大的5G试验网，其在国内的5G基站已经超过了500个。
+	5G应用后会让您想到什么？是难以置信的超高网速？还是《钢铁侠》等科幻电影中出现的3D VR式全息投影？
+	杨光介绍，未来在5G时代，交互中使用的图像、视频的分辨率会越来越高，例如1080P，甚至4K、8K的超高清图像、视频。然而在小小的手机屏幕上，用户对高清晰度图像的体验和现在不会有太大差别。但全息、虚拟现实（VR）/增强现实（AR）等能发挥高清优势的交互方式，在5G时代就变得越来越常见。就像科幻电影里那样，全息投影投出3D的全息影像，用户通过眼神、触摸等方式，有望随时随地进行三维交互。
+```
+
+**英文新闻：**
+
+```
+China said talks with the US "laid the foundations" to resolve a damaging trade dispute between the world's two largest economies.
+The negotiations in Beijing this week were "extensive, deep and detailed," China's commerce ministry said.
+The US highlighted China's pledge to purchase more agriculture and other goods, without providing specifics.
+Neither side has said when the two countries will meet again for further negotiations.
+The midlevel talks in Beijing concluded on Wednesday. They weren't expected to produce a final deal but optimism about progress had buoyed global stock markets this week.
+	A quick guide to the US-China trade war
+	What the US and China will never agree on
+A statement from the US Trade Representative said the talks "focused on China's pledge to purchase a substantial amount of agricultural, energy, manufactured, and other products and services from the United States".
+China's commerce ministry said the discussions "established a foundation for the resolution of each others' concerns".
+They agreed to maintain close contact, the statement said.
+The discussions marked the first formal talks since the US President Donald Trump and his Chinese counterpart Xi Jinping agreed not to impose new tariffs at the G20 summit in December.
+The truce came after both sides imposed several rounds of tariffs in 2018.
+The US imposed tariffs on more than $250bn (£195.6bn) worth of Chinese goods, with the threat of more to come.
+The Chinese responded by slapping tariffs of $110bn worth of US goods.
+President Trump has said if no deal is reached before the truce expires on March 2, he will increase duties on $200bn worth of Chinese goods from 10% to 25% .
+```
+
+|          |                         TextRank中文                         |                           MMR中文                            |                         TextRank英文                         |                           MMR英文                            |
+| -------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 运行速度 |                            0.857s                            |                            1.116s                            |                            0.017s                            |                            0.01s                             |
+| 运行结果 | 记者还获悉，近日5G标准推迟一事其实系“标题党”，并不会影响5G商用时间表，同时5G流量单价相比4G肯定会降低。对此，中国移动通信研究院产业与业务合作部总经理杨光认为，5G是一次技术上的升级，通信资费的单价肯定会降低。该联盟将面向包括视频娱乐、交通、医疗、智慧城市等在内的九大领域，促进北京5G产业相关主体间的合作交流，推动供需对接、技术革新，实现5G行业应用方案的顺利落地。 | 记者还获悉，近日5G标准推迟一事其实系“标题党”，并不会影响5G商用时间表，同时5G流量单价相比4G肯定会降低   中国联通将通过智慧冬奥战略，借助5G技术，为运动员、观众、媒体、业主和相关行业人员提供5G网络服务和智慧应用   2019年三大运营商将全面实现5G预商用，昨天北京移动在本市三大运营商中率先成立了5G产业联盟   有专家分析，这也就意味着只要用户不是用5G进行大批量下载，那么5G流量的性价比应该高于4G   实际上，目前中国移动已建成世界上规模最大的5G试验网，其在国内的5G基站已经超过了500个 | A quick guide to the   US-China trade war   What the US and China will   never agree on   A statement from the US   Trade Representative said the talks "focused on China's pledge to   purchase a substantial amount of agricultural, energy, manufactured, and   other products and services from the United States".   President Trump has said if   no deal is reached before the truce expires on March 2, he will increase   duties on $200bn worth of Chinese goods from 10% to 25% . | They weren't expected to   produce a final deal but optimism about progress had buoyed global stock   markets this week.A quick guide to the US-China trade warWhat the US and   China will never agree onA statement from the US Trade Representative said   the talks "focused on China's pledge to purchase a substantial amount of   agricultural, energy, manufactured, and other products and services from the   United States".China's commerce ministry said the discussions   "established a foundation for the resolution of each others'   concerns".They agreed to maintain close contact, the statement said.The   discussions marked the first formal talks since the US President Donald Trump   and his Chinese counterpart Xi Jinping agreed not to impose new tariffs at   the G20 summit in December.The truce came after both sides imposed several   rounds of tariffs in 2018.The US imposed tariffs on more than $250bn (￡195.6bn) worth of Chinese goods, with the   threat of more to come.The Chinese responded by slapping tariffs of $110bn   worth of US goods.President Trump has said if no deal is reached before the   truce expires on March 2, he will increase duties on $200bn worth of Chinese   goods from 10% to 25% .   China said talks with the   US "laid the foundations" to resolve a damaging trade dispute   between the world's two largest economies.The negotiations in Beijing this   week were "extensive, deep and detailed," China's commerce ministry   said.The US highlighted China's pledge to purchase more agriculture and other   goods, without providing specifics.Neither side has said when the two   countries will meet again for further negotiations.The midlevel talks in   Beijing concluded on Wednesday. |
+| 结果分析 | 基本上总结了文章的主要内容“5G标准延迟，资费低于4G”，第三句话跟文章摘要关联不大 | 总结内容比较全面，概括了文章的主要内容为“%G标准延迟不影响商用，资费低于4G” | 该摘要精炼的表示了文章的主旨大意，提炼出了文章主要成分在中美两国关于贸易战之间的谈判，并且中美之间永远不会达成一致这个观点 | 这份摘要比较繁杂、冗长，不够精炼，掺杂了文章很多的具体内容，虽然也提取出了文章的中心意思，但是由于其他内容的存在使中心内容并不突出，因此与textrank算法相比效果稍有折扣。 |
+| 优点     |     分析了句子之间的关联度，并且可以迭代，达到想要的效果     |           注重了摘要的多样性，联系了和文档的相似度           |          十分精炼、准确，能够有效简洁的给出文章摘要          |     运行时间短，时间复杂度较textrank低。提取的内容较多。     |
+| 缺点     |               句子多样性不足，局限于中心关键词               |                  摘要的凝聚度不够，比较松散                  | 提取的摘要句子数少时，面对长文章和中心松散的文章效果可能不好。 | 不够精炼，包含太多与文章中心无关的内容，不好将中心大意凸显出来。 |
