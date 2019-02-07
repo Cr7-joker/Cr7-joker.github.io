@@ -116,8 +116,7 @@ $\mathtt {ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 $\mathtt {ABCDEFGHIJKLMNOPQRSTUVWXYZ}​$
 
 
-
-Blackboard Bold:
+<br/>Blackboard Bold:
 
 ```
 $\mathbb {ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
@@ -127,7 +126,7 @@ $\mathbb {ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
 
 
 
-Sans Serif:
+<br/>Sans Serif:
 
 ```
 $\mathsf {ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
@@ -177,7 +176,7 @@ $\sum_{i=1}^n{a_i}$
 
 $\sum_{i=1}^n{a_i}$
 
-极限\lim，如
+<br/>极限\lim，如
 
 ```
 $\lim_{x\to 0}$
@@ -185,7 +184,7 @@ $\lim_{x\to 0}$
 
 $\lim_{x\to 0}$
 
-积分\int，如
+<br/>积分\int，如
 
 ```
 $\int_0^\infty{fxdx}$
@@ -205,7 +204,7 @@ $\frac{公式一}{公式二}$
 
 $\frac{公式一}{公式二}$
 
-- 根式\sqrt，如
+<br/>- 根式\sqrt，如
 
 ```
 $\sqrt[x]{y}$
@@ -331,8 +330,8 @@ $$
 
 - 起始、结束处以{array}声明
 
-- 对齐方式：在{array}后以{}逐行统一声明 
-  左对齐：1；居中：c；右对齐：r； 
+- 对齐方式：在{array}后以{}逐行统一声明<br/> 
+  左对齐：1；居中：c；右对齐：r； <br/>
   竖直线：在声明对齐方式时，插入|建立竖直线
 
 - 插入水平线：\hline
