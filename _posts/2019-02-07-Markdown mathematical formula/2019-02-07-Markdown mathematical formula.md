@@ -173,8 +173,8 @@ $(\frac{x}{y})$ & $ \left(\frac{x}{y}\right)$
 
 |    名称    |      数学表达式      |     markdown公式      |
 | :--------: | :------------------: | :-------------------: |
-|   求和号   |     $\sum{3x^n}$     |     \$\sum{3x^n}$     |
-| 带范围求和 | $\sum_{n=1}^N{3x^n}$ | \$\sum_{n=1}^N{3x^n}$ |
+|   求和号   |     $\sum{3x^n}$     |     \sum{3x^n}     |
+| 带范围求和 | $\sum_{n=1}^N{3x^n}$ | \sum_{n=1}^N{3x^n} |
 
 <br/>
 
@@ -183,8 +183,8 @@ $(\frac{x}{y})$ & $ \left(\frac{x}{y}\right)$
 
 |    名称    |      数学表达式       |      markdown公式      |
 | :--------: | :-------------------: | :--------------------: |
-|   求积号   |     $\prod{3x^n}$     |     \$\prod{3x^n}$     |
-| 带范围求乘 | $\prod_{n=1}^N{3x^n}$ | \$\prod_{n=1}^N{3x^n}$ |
+|   求积号   |     $\prod{3x^n}$     |     \prod{3x^n}     |
+| 带范围求乘 | $\prod_{n=1}^N{3x^n}$ | \prod_{n=1}^N{3x^n} |
 
 <br/>
 
@@ -244,22 +244,22 @@ $\sin x$ & $\ln x$ & $\max(A,B,C)$ & $\log_2{18}$
 
 | 显示 |      命令      |       显示        |        命令        |
 | :--: | :------------: | :---------------: | :----------------: |
-|  ∞   |   \$\infty$    |         ∪         |      \$\cup$       |
-|  ∩   |    \$\cap$     |         ⊂         |     \$\subset$     |
-|  ⊆   |  \$\subseteq$  |         ⊃         |     \$\supset$     |
-|  ∈   |     \$\in$     |         ∉         |     \$\notin$      |
-|  ∅   | \$\varnothing$ |         ∀         |     \$\forall$     |
-|  ∃   |   \$\exists$   |         ¬         |      \$\lnot$      |
-|  ∇   |   \$\nabla$    |         ∂         |    \$\partial$     |
-|  ≥   |    \$\geq$     |         ≤         |      \$\leq$       |
-|  ±   |     \$\pm$     |         ⋅         |      \$\cdot$      |
-|  ×   |   \$\times$    |         ÷         |      \$\div$       |
-|  ≠   |    \$\not=$    |         ≮         |      \$\not<$      |
-|  ⊅   | \$\not\supset$ |   $\not\subset$   |   \$\not\supset$   |
-|  ⊥   |    \$\bot$     |         ∠         |     \$\angle $     |
-|  ∘   |    \$\circ$    |         ↑         |    \$\uparrow$     |
-|  ↓   | \$\downarrow$  |         ←         |   \$\leftarrow$    |
-|  →   | \$\rightarrow$ | $\longrightarrow$ | \$\longrightarrow$ |
+|  ∞   |   \infty    |         ∪         |      \cup       |
+|  ∩   |    \cap     |         ⊂         |     \subset     |
+|  ⊆   |  \subseteq  |         ⊃         |     \supset     |
+|  ∈   |     \$\in     |         ∉         |     \notin      |
+|  ∅   | \varnothing |         ∀         |     \forall     |
+|  ∃   |   \exists   |         ¬         |      \lnot      |
+|  ∇   |   \nabla    |         ∂         |    \partial     |
+|  ≥   |    \geq     |         ≤         |      \leq       |
+|  ±   |     \pm     |         ⋅         |      \cdot      |
+|  ×   |   \times    |         ÷         |      \div       |
+|  ≠   |    \not=    |         ≮         |      \not<      |
+|  ⊅   | \not\supset |   $\not\subset$   |   \not\supset   |
+|  ⊥   |    \bot     |         ∠         |     \angle      |
+|  ∘   |    \circ    |         ↑         |    \uparrow     |
+|  ↓   | \downarrow  |         ←         |   \leftarrow    |
+|  →   | \rightarrow | $\longrightarrow$ | \longrightarrow |
 
 <br/>
 
