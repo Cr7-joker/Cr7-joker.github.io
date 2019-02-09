@@ -24,7 +24,7 @@ TextRank 算法是一种**用于文本的基于图**的排序算法。其基本�
 
 ### TextRank公式：
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T1.png" width="75%" alt="TextRank公式" >
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T1.png" width="80%" alt="TextRank公式" >
 
 * V<sub>i</sub>-第i个句子
 
@@ -34,9 +34,8 @@ TextRank 算法是一种**用于文本的基于图**的排序算法。其基本�
 
 * ω<sub>ji</sub>-句子j和句子i之间的相似度
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T2.png" width="65%" alt="相似度计算公式" style="margin-left:0;">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T2.png" width="70%" alt="相似度计算公式" style="margin-left:0;">
 
- <br/>
  分子为两个句子中共同出现的词数, S<sub>i</sub>S<sub>j</sub>分别为两个句子中的单词总数
 
 * WS(V<sub>i</sub>)(WeightSum)-每个句子的分数，初始值为一个常数，从第一句开始计算，不断迭代，直到最终每一个句子的分数不再变化为止(即小于一个极小值)
@@ -338,13 +337,13 @@ MMR是Maximal Marginal Releuance的缩写，中文为最大边界相关算法或
 
 **公式：**
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/MMR1.png" width="75%" alt="MMR公式">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/MMR1.png" width="80%" alt="MMR公式">
 
 ## MMR用于新闻提取
 
 •当我们将MMR用于新闻摘要提取时，可以将Query看做是整篇文档，对公式稍作修改，变成下面这个样子：
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/MMR2.jpg" width="75%" alt="MMR用于新闻提取公式">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/MMR2.jpg" width="80%" alt="MMR用于新闻提取公式">
 
 •左边的score计算的是句子的重要性分值，右边的计算的是句子与所有已经被选择成为摘要的句子之间的相似度最大值，注意这里的是负号，说明成为摘要的句子间的相似度越小越好。此处体现了MMR的算法原理，即均衡考虑了文章摘要的重要性和多样性。这种摘要提取方式与textrank不同，textrank只取全文的重要句子进行排序形成摘要，忽略了其多样性。
 
