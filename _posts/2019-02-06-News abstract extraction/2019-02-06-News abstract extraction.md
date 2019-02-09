@@ -609,18 +609,11 @@ for i, count in enumerate(countlist):
 
 
 # 场景比较分析
-<div class="table-container">
-<table>
+<div class="table-container" style="overflow-x: auto; overflow-y: auto; height: 100px; width:200px;">
+<table id="table" border="1" align="center" width="300px" height="200px">
 <thead>
 <tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' >科技新闻</th><th style='text-align:center;' >体育新闻</th><th style='text-align:center;' >娱乐新闻</th><th style='text-align:center;' >军事新闻</th></tr></thead>
 <tbody><tr><td style='text-align:center;' >特点</td><td style='text-align:center;' >新闻性，科学性，通俗性</td><td style='text-align:center;' >娱乐性，国际性，情感性</td><td style='text-align:center;' >故事性，情节性</td><td style='text-align:center;' >思想性，新鲜性，显著性</td></tr><tr><td style='text-align:center;' >MMR</td><td style='text-align:center;' >摘要相对全面，不仅对于反复提及科技产品或成果本身有足够的摘要，也对重要的有概括意义的相关结论有一定的摘要。</td><td style='text-align:center;' >摘要更偏重对体育赛事的数据和过程进行描述，特别是在重要位置的比赛信息，能比较全面的概括新闻中对比赛过程的描写。</td><td style='text-align:center;' >摘要比较简洁能够抓住核心语句，特别是新闻热点和矛盾点所在，不过摘要没法展示整个新闻中情节的发展。</td><td style='text-align:center;' >摘要非常全面，围绕着关键事件和事物有足够多的摘要，当然会有一些与核心事件无关紧要的摘要出现。</td></tr><tr><td style='text-align:center;' >TextRank</td><td style='text-align:center;' >摘要更偏重对科技产品或成果本身描述，能够较完整的描述新闻中提及的科技产品或成果的特点，特性，参数等信息，但对一些结论不会做描述。</td><td style='text-align:center;' >摘要更加简洁，更加有针对性，特别是新闻中反复出现的名词，会有更多与之相关的摘要，摘要能够对某一方面有充分的概括。</td><td style='text-align:center;' >摘要更加全面，对于涉及主要事件和主要人物的片段，都会有摘要，使得摘要能够大致反映新闻中情节的发展，而且对于核心的地方也有足够的描述。</td><td style='text-align:center;' >摘要比较简洁，对于核心事件或事物能够有相对全面的描述，但是新闻中围绕核心事件或事物的一些附加片段不会有太多的描述。
 </td></tr></tbody>
 <table>
 </div>
-.table-container
-{
-width: 100%;
-overflow-y: auto;
-_overflow: auto;
-margin: 0 0 1em;
-}
