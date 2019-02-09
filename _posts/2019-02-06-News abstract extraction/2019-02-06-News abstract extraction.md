@@ -34,10 +34,8 @@ TextRank 算法是一种**用于文本的基于图**的排序算法。其基本�
 
 * ω<sub>ji</sub>-句子j和句子i之间的相似度
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T2.png" width="30%" alt="相似度计算公式" align="left">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-06-News%20abstract%20extraction/assert/T2.png" width="65%" alt="相似度计算公式" align="left">
 
- <br/>
- <br/>
  <br/>
  <br/>
  <br/>
