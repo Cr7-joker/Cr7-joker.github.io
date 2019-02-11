@@ -3,7 +3,7 @@ title: Socket network programming
 tags: Socket UDP TCP
 edit: 2019-02-11
 categories: Python
-status: Writing
+status: Completed
 description: Implement socket network programming in python, use TCP, UDP protocol, and complete file transfer function
 ---
 
@@ -17,11 +17,11 @@ description: Implement socket network programming in python, use TCP, UDP protoc
 
 # 简单TCP过程
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-08-Socket%20network%20programming/assert/TCP.png" width="90%" alt="TCP通信过程">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-11-Socket%20network%20programming/assert/TCP.png" width="90%" alt="TCP通信过程">
 
 # Socket通信过程
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-08-Socket%20network%20programming/assert/socket.png" width="90%" alt="socket通信过程">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-11-Socket%20network%20programming/assert/socket.png" width="90%" alt="socket通信过程">
 
 # Socket通信方式
 
