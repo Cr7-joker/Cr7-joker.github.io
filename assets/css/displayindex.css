@@ -35,7 +35,7 @@ body {
 .wrap {
   position: relative;
   width: 90%;
-	margin-left:auto;
+	margin-left:-1.5rem;
 	margin-right: auto;
 }
 
