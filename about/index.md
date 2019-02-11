@@ -10,7 +10,7 @@ mathjax: true
 
 # Me
 
-My name is Zhigang Shang. I am currently a senior undergraduate in UESTC, China. I major in Software Engineering. 
+My name is *Zhigang Shang*. I am currently a senior undergraduate in **UESTC**, **China**. I major in **Software Engineering**. 
 
 
 # This Site
@@ -49,4 +49,4 @@ Which has been beautifully put by Bruce Lee:
 
 # Contact
 
-The best way to reach me is via email: 1249571973@qq.com or szgtql@outlook.com or 2017221101005@std.uestc.edu.cn
+The best way to reach me is via email: `1249571973@qq.com` or `szgtql@outlook.com` or `2017221101005@std.uestc.edu.cn`
