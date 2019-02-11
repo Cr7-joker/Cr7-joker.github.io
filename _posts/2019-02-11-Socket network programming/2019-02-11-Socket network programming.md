@@ -1,10 +1,10 @@
 ---
 title: Socket network programming
 tags: Socket UDP TCP
-edit: 2019-02-07
+edit: 2019-02-11
 categories: Python
 status: Writing
-description: 
+description: Implement socket network programming in python, use TCP, UDP protocol, and complete file transfer function
 ---
 
 # What is socket?
@@ -54,3 +54,11 @@ description:
 •遇到文件上传的情况，又没有第三方软件支持的时候
 
 •可以自己实现
+
+# 代码实现
+
+参见[GitHub——（python-socket）](https://github.com/Cr7-joker/python-socket)
+
+有`TCP`和`UDP`两种协议的简单传输，都分为`Client`端和`Server`端，附加`非阻塞TCP传输`代码
+
+还有`文件传输`的代码
