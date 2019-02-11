@@ -17,11 +17,11 @@ description:
 
 # 简单TCP过程
 
-<img
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-08-Socket%20network%20programming/assert/TCP.png" width="90%" alt="TCP通信过程">
 
 # Socket通信过程
 
-<img
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-08-Socket%20network%20programming/assert/socket.png" width="90%" alt="socket通信过程">
 
 # Socket通信方式
 
