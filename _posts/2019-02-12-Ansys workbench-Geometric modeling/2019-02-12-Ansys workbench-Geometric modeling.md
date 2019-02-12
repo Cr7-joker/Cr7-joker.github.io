@@ -15,7 +15,7 @@ description: Drawing a geometric model of the base by three-dimensional modeling
 
 ## 实现步骤  
 
-1. 打开`workbench`，点击`File-new`，新建一个`project`。
+1. 打开`workbench`，点击`File-new`，新建一个`project`
 
  <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-12-Ansys%20workbench-Geometric%20modeling/assert/01.png" width="90%">
 2. 将`Geometry`放入到`项目概图`中
