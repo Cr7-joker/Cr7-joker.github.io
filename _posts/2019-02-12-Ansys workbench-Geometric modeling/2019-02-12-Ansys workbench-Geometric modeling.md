@@ -1,7 +1,7 @@
 ---
 title: Ansys workbench-Geometric modeling
 tags: Modeling Ansys
-edit: 2019-02-01
+edit: 2019-02-12
 categories: Technology
 status: Completed
 description: Drawing a geometric model of the base by three-dimensional modeling by applying the simulation software Ansys workbench.
