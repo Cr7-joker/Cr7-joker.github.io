@@ -27,39 +27,39 @@ E-R图，在数据库系统概论中有涉及到，这个实体关系图中，�
 
    一个安装包，一个汉化包和一个破解包
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/01.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/01.png" width="70%">
 
 2. 运行程序
 
    运行*PowerDesigner165.exe*
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/02.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/02.png" width="70%">
 
 3. Next继续
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/03.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/03.png" width="70%">
 
 4. 选**Trial**，Next
 
    默认选项就是**Trial**
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/04.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/04.png" width="70%">
 
 5. 下拉菜单，选**Hong Kong**
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/05.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/05.png" width="70%">
 
 6. 选择要安装的位置，Next
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/06.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/06.png" width="70%">
 
 7. 默认的不用管，Next
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/07.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/07.png" width="70%">
 
 8. **General**和**Notation**全勾上，Next
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/08.png" width=70%>
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-02-25-PowerDesigner%2016.5%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/assert/08.png" width="70%">
 
 9. 一直Next，最后Finished
 
