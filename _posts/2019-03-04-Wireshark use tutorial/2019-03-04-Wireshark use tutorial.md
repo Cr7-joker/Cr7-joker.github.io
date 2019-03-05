@@ -7,9 +7,9 @@ status: Writing
 description: The use tutorial from entry to mastery of network analysis tool Wireshark
 ---
 
-# 【基础】软件使用调试
+# [基础]软件使用调试
 
-# Wireshark安装入门
+## Wireshark安装入门
 
 ### 软件介绍
 
@@ -50,23 +50,23 @@ Wireshark是目前全球使用最广泛的开源抓包软件(前身为Ethereal)�
 4. Httpwatch
 5. 科来网络分析系统
 
-## 抓包原理
+### 抓包原理
 
-### 网络原理
+#### 网络原理
 
-#### 本机环境
+##### 本机环境
 
 直接抓包本机网卡进出流量
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/01.png" width="70%">
 
-#### 集线器环境
+##### 集线器环境
 
 流量防洪，同一冲突域
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/02.png" width="70%">
 
-#### 交换机环境
+##### 交换机环境
 
 1. 端口镜像
 
@@ -80,35 +80,35 @@ Wireshark是目前全球使用最广泛的开源抓包软件(前身为Ethereal)�
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/05.png" width="70%">
 
-### 底层原理
+#### 底层原理
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/06.png" width="70%">
 
-#### Win-/libpcap
+##### Win-/libpcap
 
 Wireshark抓包时依赖的库文件
 
-#### Capture
+##### Capture
 
 捕包引擎，利用libpcap/Winpcap从底层抓取网络数据包，libpcap/Winpcap提供了通用的抓包接口，能从不同类型的网络接口（包括以太网，令牌环网，ATM网等）获取数据包
 
-#### Wiretap
+##### Wiretap
 
 格式支持，从抓包文件中读取数据包，支持多种文件格式
 
-#### Core
+##### Core
 
 核心引擎，通过函数调用将其他模块连接在一起，起到联动调度的作用
 
-#### GTK1/2
+##### GTK1/2
 
 图像处理工具，处理用户的输入输出显示
 
-## 初始安装
+### 初始安装
 
 从官网下载，默认选项即可
 
-## 快速抓包
+### 快速抓包
 
 1. 初始界面
 
