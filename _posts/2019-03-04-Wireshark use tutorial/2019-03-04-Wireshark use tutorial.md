@@ -128,3 +128,99 @@ Wireshark抓包时依赖的库文件
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/10.png" width="70%">
 
+### 界面介绍
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/11.png" width="70%">
+
+1. 标题栏
+2. 菜单栏
+3. 工具栏
+4. 数据包过滤栏
+5. 数据包列表区
+6. 数据包详细区
+7. 数据包字节区
+8. 数据包统计区
+
+## Wireshark进阶调试
+
+### 显示界面设置
+
+#### 显示大小
+
+在`菜单栏`可调整字体显示大小
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/12.png" width="70%">
+
+#### 列设置
+
+1. 增加列
+
+   在`数据包详细区`可选择想要作为列的信息，**右键**，**应用为列**，在`数据包列表区`即可显示相应增加的列
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/13.png" width="70%">
+
+2. 修改列
+
+3. 隐藏列
+
+4. 删除列
+
+   在`数据包列表区`的列名**右键**，即可完成操作
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/14.png" width="70%">
+
+#### 时间设置
+
+1. 设置时间格式
+
+   在`视图`里设置
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/15.png" width="70%">
+
+2. 设置参考时间
+
+   选择想要设置为参照点的数据包，**右键**，**设置为时间参考**
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/16.png" width="70%">
+
+#### 名字解析
+
+1. 功能：将MAC地址，IP地址，端口号等转换成名字，默认是开启MAC地址解析
+
+2. 开启名字解析
+
+   在**Capture捕获**里点击**选项**开启想要解析的
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/17.png" width="70%">
+
+3. 手工设置解析
+
+   在想要手动解析的数据包**右键**，**编辑解析的名字**
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/18.png" width="70%">
+
+### 数据包操作
+
+#### 标记数据包
+
+1. 标记/高亮数据包
+2. 修改数据包颜色
+   1. 直接在数据包列表修改
+   2. 修改数据包默认颜色方案
+
+#### 注释数据包
+
+#### 合并数据包
+
+#### 打印数据包
+
+#### 导出数据包
+
+### 首选项设置
+
+### 抓包选项设置
+
+### 过滤器设置
+
+## Wireshark高级功能
+
