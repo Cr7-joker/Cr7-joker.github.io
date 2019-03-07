@@ -264,7 +264,37 @@ Wireshark抓包时依赖的库文件
 
 ### 首选项设置
 
+功能：设置默认软件参数
+
+1. 修改默认打开目录
+
+   在`编辑`里点击`首选项`，点击**Appearance**里即可更改打开路径
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/30.png" width="70%">
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/31.png" width="70%">
+
+2. 修改用户界面
+
+   在`编辑`里点击`首选项`，点击**Appearance**里的**Layout**，**Columns**，**Font and Colors**即可调整用户界面
+
+3. 修改抓包设置
+
+   功能：
+
+   1. 网卡设置
+   2. 抓包过滤器
+   3. 多文件连续保存
+   4. 停止抓包规则
+   5. 名字解析
+
+4. 修改名字解析
+
+**都在`编辑`里点击`首选项`里面设置**
+
 ### 抓包选项设置
+
+
 
 ### 过滤器设置
 
