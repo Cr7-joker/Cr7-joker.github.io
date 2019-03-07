@@ -204,17 +204,63 @@ Wireshark抓包时依赖的库文件
 #### 标记数据包
 
 1. 标记/高亮数据包
+
+   选择所想标记/高亮数据包，**右键**，**标记分组**
+
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/19.png" width="70%">
+
 2. 修改数据包颜色
    1. 直接在数据包列表修改
+
+      在数据包，**右键**，**会话着色**，可对不同协议设置不同颜色（*仅对本次进程有效，程序重启恢复默认*）
+
+      <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/20.png" width="70%">
+
    2. 修改数据包默认颜色方案
+
+      在`视图`里点击**着色规则**，在里面选择想要修改的数据包类型，通过修改**前景**，**后景**来修改默认颜色
+
+      <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/21.jpg" width="70%">
+
+      <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/22.png" width="70%">
 
 #### 注释数据包
 
+功能：为数据包编写注释信息
+
+在所想注释数据包**右键**，**分组注释**，写下自己的注释，然后在`数据包详细区`即可显示自己所写注释
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/23.png" width="70%">
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/24.jpg" width="70%">
+
 #### 合并数据包
+
+功能：将两个数据包文件合并
+
+在`文件`里点击`合并`，选择想要合并的数据包文件
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/25.png" width="70%">
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/26.png" width="70%">
 
 #### 打印数据包
 
+在`文件`里点击`Print`
+
 #### 导出数据包
+
+在`文件`里点击`导出特定分组`，选定导出的种类（All packets,Selected packet etc.）
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/27.png" width="70%">
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/28.png" width="70%">
+
+导出为其他格式文件，如CSV格式
+
+在`文件`里点击`导出分组解析结果`，选择想导出的类型
+
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-03-04-Wireshark%20use%20tutorial/assert/29.png" width="70%">
 
 ### 首选项设置
 
