@@ -95,7 +95,7 @@ article,aside,figcaption,figure,footer,header,nav,section{
 h1,h2,h3,h4,stong{
     margin-top:auto;
     padding-top:inherit;
-    line-height:normal;
+    line-height:inherit;
     color:#333
 }
 h1{
