@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /secret/
 Disallow: /secret
 
-SITEMAP: https://Cr7-joker.github.io/sitemap.xml
+SITEMAP: https://www.shangzg.top/sitemap.xml
