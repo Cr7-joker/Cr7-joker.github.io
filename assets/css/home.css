@@ -93,9 +93,9 @@ article,aside,figcaption,figure,footer,header,nav,section{
     display:block
 }
 h1,h2,h3,h4,stong{
-    margin-top:1em;
-    padding-top:1em;
-    line-height:1.25;
+    margin-top:auto;
+    padding-top:inherit;
+    line-height:normal;
     color:#333
 }
 h1{
@@ -299,7 +299,7 @@ sub,sup{
 }
 .lower{
     text-align:center;
-    font-size:60px;
+    font-size:22px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
