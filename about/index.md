@@ -50,5 +50,4 @@ Which has been beautifully put by Bruce Lee:
 # Contact
 
 The best way to reach me is via email: `1249571973@qq.com` or `szgtql@outlook.com` or `2017221101005@std.uestc.edu.cn`
-
->
+	
