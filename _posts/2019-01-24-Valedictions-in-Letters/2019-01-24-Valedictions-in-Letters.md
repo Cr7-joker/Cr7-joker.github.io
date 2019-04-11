@@ -1,14 +1,9 @@
 ﻿---
 title: 中英文邮件祝辞
-
 categories: Miscellaneous
-
 keywords: Chinese Valedictions
-
 language: Chinese
-
 description: 邮件最后致意的写法规则
-
 toc: false
 
 ---
