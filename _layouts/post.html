@@ -8,12 +8,15 @@
       {% include theme-vue.html%}
       <!-- change font -->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700|Source+Sans+Pro|Ubuntu+Mono" rel="stylesheet">
-      {% if page.numbering == true %}
-			<!-- link to counter.css -->
-      <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/counter.css">
-			{% endif %}
-			<!-- link to responsive post.css -->
-      <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/post.css">
+    {% if page.numbering == true %}
+    <!-- link to counter.css -->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/counter.css">
+    {% endif %}
+    {% if page.commentable == true %}
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/commentit.css">
+    {% endif %}
+    <!-- link to responsive post.css -->
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/post.css">
    </head>
 	 
 <body>
@@ -43,7 +46,7 @@
 					 {{ content }}			
 				</div>
 				
-				
+				 <iframe src="https://www.shangzg.top/donate/donate.html" style="width: 100%; height: 210px; border-radius: 4px; background-clip: padding-box; border: 0px; padding: 0px; margin: 0px;"  frameborder="0" scrolling="no"></iframe>
 
 				<div id="comment-session">
 					 {% include commentit.html %}
