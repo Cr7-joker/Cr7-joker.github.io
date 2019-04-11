@@ -8,18 +8,6 @@ mathjax: true
 highlight: true
 mermaid: true
 description: Build Your Blog with GitHub Pages. You can use my theme `PointingToTheMoon` to write your blog or other themes. My theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
-comments:
-  - author:
-      type: twitter
-      displayName: shang_leslie
-      url: 'https://twitter.com/shang_leslie'
-      picture: >-
-        https://pbs.twimg.com/profile_images/1108982041410830336/uJfe8Ecr_bigger.jpg
-    content: nice!
-    date: 2019-04-11T06:53:03.485Z
-
----
-
 
 
 # Why GitHub Pages?
@@ -92,7 +80,7 @@ Here is a list of files you need to modify
 2. Readme.md: add your description.
 3. config.yml: fill in as much as you can.
 4. index.html: fill in description and (if any) proposed posts.
-5. register at [commentit.io](https://commentit.io/). This enables your website's comment feature.
+5. register at [www.livere.com](https://www.livere.com/). This enables your website's comment feature.
 6. Better google discovery: google site authentication. Just go to [webmaster](https://search.google.com/search-console?hl=en) and click `add property` and download the google authentication file, put in under the root of your repo. A few days later, you should be able to see your website in google search by searching `site:your-site-name.github.io` (no space in between).
 
 After that, you should be able to enjoy your blogging!
