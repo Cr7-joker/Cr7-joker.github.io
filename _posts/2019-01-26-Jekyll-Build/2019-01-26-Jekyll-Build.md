@@ -9,7 +9,6 @@ highlight: true
 mermaid: true
 description: Build Your Blog with GitHub Pages. You can use my theme `PointingToTheMoon` to write your blog or other themes. My theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
 
-
 # Why GitHub Pages?
 
 1. It's simple.
