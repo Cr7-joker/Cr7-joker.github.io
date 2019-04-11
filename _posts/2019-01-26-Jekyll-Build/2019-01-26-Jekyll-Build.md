@@ -4,9 +4,6 @@ tags: Jekyll Blog
 edit: 2019-01-26T00:00:00.000Z
 categories: Blog
 status: Completed
-mathjax: true
-highlight: true
-mermaid: true
 description: Build Your Blog with GitHub Pages. You can use my theme `PointingToTheMoon` to write your blog or other themes. My theme is great for academic use, for it features simple post page with mathjax support and a side bar with toc. The main page on the other hand is somewhat fancy.
 ---
 
