@@ -1,8 +1,8 @@
----
+﻿---
 title: PowerDesigner 16.5 安装破解教程以及汉化
 tags: Modeling Database
 edit: 2019-02-25
-categories: Technology
+categories: Tool
 status: Completed
 description: Install and crack the database modeling tool powerdesigner16.5 and Chinese localization
 ---
