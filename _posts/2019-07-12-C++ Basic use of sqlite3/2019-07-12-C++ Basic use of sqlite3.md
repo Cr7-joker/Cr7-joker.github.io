@@ -17,7 +17,7 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
 # **SQL(structured query language)语句** 
 
-**特点**：不区分大小写，每条语句后加";"结尾。
+**特点**：不区分大小写，每条语句后加“ ; ”结尾。
 
 **关键字**：select、insert、update、delete、from、creat、where、desc、order、by、group、table、alter、view、index等，数据库中不能使用关键字命名表和字段。
 
