@@ -35,7 +35,7 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
 2. 删除表 ⟹ drop：dorp table 表名；drop table if exists 表名；
 
-   ```
+   ```sql
    DROP TABLE IF EXISTS Person; 
    ```
 
@@ -52,38 +52,38 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 2. 修改表中的数据 ⟹ update：update 表名 set 字段1 ＝ 字段1的值，字段2 ＝ 字段2的值，……;
 
    ```sql
-   UPDATE Person SET name = 'Shang', age = 18; // 把表中name字段的值全部改成Shang，age字段的值全部改成18。  
+   UPDATE Person SET name = 'Shang', age = 18; /* 把表中name字段的值全部改成Shang，age字段的值全部改成18。*/
    ```
 
-   ```sqlite
-   UPDATE Person SET age = 12 WHERE name = 'Leslie'; // 把表中name字段值是Leslie的age值改为12。 
+   ```sql
+   UPDATE Person SET age = 12 WHERE name = 'Leslie'; /* 把表中name字段值是Leslie的age值改为12。*/
    ```
 
 3. 删除表中的数据 ⟹ delete：delete from 表名；delete from 表名 where 字段 ＝ 字段值。
 
-   ```sqlite
-   DELETE FROM Person WHERE age > 12 AND age < 15; // 删除表中年龄大于12且小于15的记录。
+   ```sql
+   DELETE FROM Person WHERE age > 12 AND age < 15; /* 删除表中年龄大于12且小于15的记录。*/
    ```
 
 ## **数据查询语句(DQL：Data Query Language)**
 
 1. select：select 字段1， 字段2， 。。。 from 表名；select 字段1， 字段2，…… from 表名 where 字段 ＝ 某值；select * from 表名；(查询所有的字段)
 
-   ```sqlite
+   ```sql
    SELECT name, age FROM Person WHERE age < 20; 
    ```
 
-   ```sqlite
+   ```sql
    SELECT * FROM Person WHERE age < 20; 
    ```
 
 2. 计算记录条数：select count(字段或者*) from 表名；
 
-   ```sqlite
+   ```sql
    SELECT count(name) FROM Person WHERE age > 20; 
    ```
 
-   ```sqlite
+   ```sql
    SELECT count(*) FROM Person WHERE age > 20; 
    ```
 
@@ -91,14 +91,14 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
 4. order by：select * from 表名 order by 字段(默认升序)；select * from 表名 order by 字段 desc(降序)；select * from 表名 order by 字段 asc(升序)；select * from 表名 order by 字段1 asc(先按字段1升序)，字段2 desc(再按字段2降序)；
 
-   ```sqlite
-   SELECT * FROM Person WHERE age < 20 ORDER BY age DESC, name ASC; // 先按年龄降序，再按名字升序。  
+   ```sql
+   SELECT * FROM Person WHERE age < 20 ORDER BY age DESC, name ASC; /* 先按年龄降序，再按名字升序。*/  
    ```
 
 5. limit：select * from 表名 limit 数值1，数值2；分页查询，数值1表示跳过前面多少条，数值2表示取出之后多少条。select * from 表名 limit 数值2；(跳过前面0条，相当于select * from 表名 limit 0，数值2，表示最前面多少条数据)
 
-   ```sqlite
-   SELECT * FROM Person WHERE age < 20 ORDER BY age DESC, name ASC LIMIT 3, 5; // 先筛选，后排序，再分页。 
+   ```sql
+   SELECT * FROM Person WHERE age < 20 ORDER BY age DESC, name ASC LIMIT 3, 5; /* 先筛选，后排序，再分页。*/ 
    ```
 
 6. like：模糊查询，select 字段1， 字段2， 。。。 from 表名 where 字段 like ％某值％；
@@ -115,7 +115,7 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 - primary key：主键，用来唯一的标识某条记录，相当于记录的身份证。主键可以是一个或多个字段，应由计算机自动生成和管理。主键字段默认包含了not null和unique两个约束。
 - autoincrement：当主键是integer类型时，应该增加autoincrement约束，能实现主键值的自动增长。
 
-```sqlite
+```sql
 CREATE TABLE IF NOT EXISTS Person (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL UNIQUE, age integer NOT NULL DEFAULT 30); 
 ```
 
@@ -125,23 +125,23 @@ CREATE TABLE IF NOT EXISTS Person (id integer PRIMARY KEY AUTOINCREMENT, name te
 
 1. 创建一个表：
 
-   ```sqlite
+   ```sql
    CREATE TABLE IF NOT EXISTS Class (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL UNIQUE);
    ```
 
 2.  创建一个带外键的表：Student表中有一个叫做fk_student_class的外键，这个外键的作用是让Student表中的class_id字段引用Class表中的id字段。
 
-   ```sqlite
+   ```sql
    CREATE TABLE IF NOT EXISTS Student (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL, class_id integer NOT NULL, CONSTRAINT fk_student_class FOREIGN KEY (class_id) REFERENCES Class(id)); 
    ```
 
 3. 利用外键来查询多张表中的数据：
 
-   ```sqlite
+   ```sql
    SELECT s.name s_name, s.age s_age, c.name c_name FROM Student s, Class c WHERE s.class_id = c.id;　// 查询所有学生对应的班级 
    ```
 
-   ```sqlite
+   ```sql
    SELECT * FROM Student WHERE class_id = (SELECT id FROM Class WHERE name = '四班'); // 查询四班的所有学生
    ```
 
