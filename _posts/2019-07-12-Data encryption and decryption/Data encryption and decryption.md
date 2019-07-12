@@ -1,10 +1,10 @@
 ---
-title Data encryption and decryption
-tags Decrypt Encrypt
-edit 2019-07-12
-categories Technology
-status Completed
-description Encrypting and decrypting data based on Windows API CryptProtectData()/CryptUnProtectData()
+title: Data encryption and decryption
+tags: Decrypt Encrypt
+edit: 2019-07-12
+categories: Technology
+status: Completed
+description: Encrypting and decrypting data based on Windows API CryptProtectData()/CryptUnProtectData()
 ---
 
 # CryptProtectData function
