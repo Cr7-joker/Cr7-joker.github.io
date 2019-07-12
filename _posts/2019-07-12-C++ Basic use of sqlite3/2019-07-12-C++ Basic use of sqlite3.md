@@ -29,13 +29,13 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
 1. 新建表 ⟹ create：create table 表名 (字段名1 字段类型1，字段名2 字段类型2，……); create table if not exists 表名 (字段名1 字段类型1，字段名2 字段类型2，……);
 
-   ```sqlite
+   ```sql
    CREATE TABLE IF NOT EXISTS Person (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL);
    ```
 
 2. 删除表 ⟹ drop：dorp table 表名；drop table if exists 表名；
 
-   ```sqlite
+   ```
    DROP TABLE IF EXISTS Person; 
    ```
 
@@ -45,13 +45,13 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
    *字符串内容用单引号。*
 
-   ```sqlite
+   ```sql
    INSERT INTO Person (name, age) VALUES ('Leslie', 20); 
    ```
 
 2. 修改表中的数据 ⟹ update：update 表名 set 字段1 ＝ 字段1的值，字段2 ＝ 字段2的值，……;
 
-   ```sqlite
+   ```sql
    UPDATE Person SET name = 'Shang', age = 18; // 把表中name字段的值全部改成Shang，age字段的值全部改成18。  
    ```
 
@@ -103,7 +103,7 @@ SQL语句是SQL操作的指令，我们用C/C++访问数据库时，需要用cha
 
 6. like：模糊查询，select 字段1， 字段2， 。。。 from 表名 where 字段 like ％某值％；
 
-   ```sqlite
+   ```sql
    SELECT * FROM Person WHERE name like '%esli%'; 
    ```
 
@@ -187,7 +187,7 @@ CREATE TABLE IF NOT EXISTS Person (id integer PRIMARY KEY AUTOINCREMENT, name te
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-C++ Basic%20use%20of%20sqlite3/assert/07.png" width="70%">
 
-   即可在cnd命令行使用lib命令了。
+   即可在cmd命令行使用lib命令了。
 
 4. VS2019中配置SQLite3
 
