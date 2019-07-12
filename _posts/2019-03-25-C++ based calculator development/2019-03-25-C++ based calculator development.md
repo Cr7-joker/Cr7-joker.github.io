@@ -1,6 +1,6 @@
 ---
 title: C++ based calculator development
-tags: C++ Calulator
+tags: C++ Calculator
 edit: 2019-03-25
 categories: C++
 status: Completed
@@ -50,7 +50,7 @@ string expr; //数学表达式
 ```c++
 int word_analysis(vector<pair<string, int>>& word, string expr)
 {
-	//删除 开放sqrt 中qrt字符串
+	//删除 开方函数 sqrt 中qrt字符串
 	int pos = 0;
 	while ((pos = expr.find("qrt")) != -1)
 	{
@@ -146,7 +146,7 @@ int word_analysis(vector<pair<string, int>>& word, string expr)
 }
 ```
 
-**解释：**为每个运算符分配相应的数字ID，若是数字则读取到下一个非数字符号将以读取数字字符串分配数字ID。对逗号（**.**），开方（**Sqrt**）,做简单的格式判断
+**解释：**为每个运算符分配相应的数字ID，若是数字则读取到下一个非数字符号将以读取数字字符串分配数字ID。对小数点（**.**），开方（**Sqrt**）,做简单的格式判断
 
 ## 语法分析
 
@@ -293,3 +293,6 @@ int main()
 
 # [Github源码](<https://github.com/Cr7-joker/Calculator>)
 
+# IOS计算器程序开发
+
+此部分请看合作开发项目[基于iOS的简单计算器开发](https://www.michaeltan9999.com/2019/04/09/%E5%9F%BA%E4%BA%8EiOS%E7%9A%84%E7%AE%80%E5%8D%95%E8%AE%A1%E7%AE%97%E5%99%A8%E5%BC%80%E5%8F%91/#more)
