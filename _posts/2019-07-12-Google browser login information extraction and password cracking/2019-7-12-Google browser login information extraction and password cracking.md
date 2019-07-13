@@ -11,13 +11,13 @@ description: Get the login information (URL, login name, password，etc.) automa
 
 1. 在地址栏输入chrome://settings/passwords来查看所有已保存的密码列表，搜索感兴趣的目标站点。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/01.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/01.png" width="70%">
 
 2. 进入目标站点的登录页面，输入用户名前几位字符，让浏览器自动填充密码。右键审查元素（F12），选中密码区域，将密码字段代码的**type=”password”**改为**type=”text”**，即可查看明文密码。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/02.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/02.png" width="70%">
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/03.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/03.png" width="70%">
 
 # 获得Chrome保存的登录信息和密码破解
 
@@ -31,11 +31,11 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
 成功读取数据库文件保存的信息，但password段无法显示，如下图
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/04.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/04.png" width="70%">
 
 选择Form view，查看十六进制格式，获得二次加密后的用户密码，如下图
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/05.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/05.png" width="70%">
 
 **注：**如果Chrome正在运行，无法使用SQLiteStudio打开数据库文件Login Data，可将该文件复制后再打开
 
@@ -190,7 +190,7 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
    通过解密函数解密之后得到的密码会在尾部填充一些字段乱码，由于Chrome在加密时采用分组加密，每个密码单独分组，且分组长度相同（分组长度大于最大密码长度），空余部分用不影响读取的符号填充，所以直接解密后输出会在尾部出现乱码，需要对解密后的密码进行截取，只需要前面正确的部分。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/07.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/07.png" width="70%">
 
    填充的乱码一般是十六进制的"\x1"—"\x9"和"\a"，"\b"，所以进行乱码之前的密码子串的截取。
 
@@ -220,7 +220,7 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
    运行run.cpp，其结果如下图：
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/06.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/06.png" width="70%">
 
    用户信息提取成功，并获得解密后的密码。
    
