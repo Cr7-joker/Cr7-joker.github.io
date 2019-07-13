@@ -1,9 +1,9 @@
----
+﻿---
 title: Google browser login information extraction and password cracking
-tags: C++ Database Decrypt
+tags: C++ Database Decrypt VS2019 SQLite3
 edit: 2019-07-13
 categories: C++ Technology
-status: Writing
+status: Competed
 description: Get the login information (URL, login name, password，etc.) automatically saved by Google Chrome and password cracking
 ---
 
@@ -27,7 +27,7 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
 `C:\Users\Joker\AppData\Local\Google\Chrome\User Data\Default\Login Data`
 
-以文本方式打开`Login Data`文件可以看到其头部有`SQLite format 3`标记，说明其是`Sqlite3`的文件。使用使用[SQLiteStudio](https://sqlitestudio.pl/index.rvt)（在上篇[博文](https://www.shangzg.top/c++/C++-Basic-use-of-sqlite3.html#额外工具使用sqlitestdio辅助))有简单介绍）打开。
+以文本方式打开`Login Data`文件可以看到其头部有`SQLite format 3`标记，说明其是`Sqlite3`的文件。使用使用[SQLiteStudio](https://sqlitestudio.pl/index.rvt)（在上篇[博文](https://www.shangzg.top/c++/C++-Basic-use-of-sqlite3.html#额外工具使用sqlitestdio辅助)有简单介绍）打开。
 
 成功读取数据库文件保存的信息，但password段无法显示，如下图
 
@@ -223,4 +223,6 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-13-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/06.png" width="70%">
 
    用户信息提取成功，并获得解密后的密码。
+   
+   [C++工程项目文件](https://github.com/Cr7-joker/Google-browser-login-information-extraction-and-password-cracking)已上传到github。
 

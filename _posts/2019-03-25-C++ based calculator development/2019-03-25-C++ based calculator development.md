@@ -1,6 +1,6 @@
----
+﻿---
 title: C++ based calculator development
-tags: C++ Calculator
+tags: C++ Calculator VS2019
 edit: 2019-03-25
 categories: C++
 status: Completed

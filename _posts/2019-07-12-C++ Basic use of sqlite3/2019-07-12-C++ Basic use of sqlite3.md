@@ -1,6 +1,6 @@
----
+﻿---
 title: C++ Basic use of sqlite3
-tags: C++ Database
+tags: C++ Database VS2019 SQLite3
 edit: 2019-07-12
 categories: C++
 status: Completed
