@@ -1,5 +1,7 @@
 ﻿---
 title: 中英文邮件祝辞
+tags: Letter
+edit: 2019-01-24
 categories: Miscellaneous
 keywords: Chinese Valedictions
 language: Chinese
