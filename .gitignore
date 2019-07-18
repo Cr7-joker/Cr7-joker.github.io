@@ -1,5 +1,5 @@
 _site
 .sass-cache
 node_modules
-_posts
+_posts/
 .DS_STORE
