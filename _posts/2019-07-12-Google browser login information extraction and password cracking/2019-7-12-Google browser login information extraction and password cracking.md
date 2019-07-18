@@ -1,12 +1,11 @@
 ﻿---
 title: Google browser login information extraction and password cracking
-tags: C++ Database Decrypt VS2019 SQLite3
+tags: C++ Database Decrypt VS2019 SQLite3 Chrome
 edit: 2019-07-13
 categories: C++ Technology
 status: Completed
-description: Get the login information (URL, login name, password，etc.) automatically saved by Google Chrome and password cracking
+description: Get the login information (URL, login name, password, etc.) automatically saved by Google Chrome and password cracking
 ---
-
 #  查看浏览器已保存的密码
 
 1. 在地址栏输入chrome://settings/passwords来查看所有已保存的密码列表，搜索感兴趣的目标站点。
