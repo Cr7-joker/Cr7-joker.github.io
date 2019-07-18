@@ -1,7 +1,7 @@
 ---
 title: Firefox browser login information extraction and decryption
 tags: C++ Firefox Decrypt VS2019
-edit: 2019-07-17
+edit: 2019-07-18
 categories: C++ Technology
 status: Completed
 description: Extract and decrypt the login information (URL, username, password) automatically saved by Firefox based on C++
@@ -34,6 +34,7 @@ Firefox用户可以在浏览器的设置中设定主密码，但关键是好多�
 [NSS reference](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Reference)
 
 [PKCS11 Implement](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11_Implement)
+
 [NSS API Guidelines](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_API_GUIDELINES#NSS_API_Structure)
 
 # C++ 程序实现
@@ -121,6 +122,8 @@ char* U2G(const char* utf8);
 
 
 
+
+
 ## 获取Firefox安装路径模块（InstallatonPath_Get.cpp）
 
 ```c++
@@ -173,6 +176,8 @@ string getInstallationPath(){
 
 
 
+
+
 ## 动态加载库模块（Library_Load.cpp）
 
 ```c++
@@ -189,6 +194,8 @@ HMODULE loadLibrary(string installationPath) {
 	return	nssLib;	// 返回模块句柄
 }
 ```
+
+
 
 
 
@@ -259,6 +266,8 @@ FARPROC GetProcAddress(
 
 
 
+
+
 ## 获取保存登录信息文件路径模块（ProfilePath_Get.cpp）
 
 ```c++
@@ -296,6 +305,8 @@ string getProfilePath() {
 ```
 
 **SHGetFolderPathA**：参考window开发文档[SHGetFolderPathA function](https://docs.microsoft.com/zh-cn/windows/win32/api/shlobj_core/nf-shlobj_core-shgetfolderpatha)
+
+
 
 
 
@@ -412,6 +423,8 @@ To perform this operation as a transacted operation, which results in a handle t
 
 
 
+
+
 ## 解密模块（Decrypt.cpp）
 
 ```c++
@@ -463,6 +476,8 @@ Firefox解密时，先申请获得内部key槽slot，获得成功后，再进行
 
 
 
+
+
 ## 辅助Base64解码模块（Char_Count.cpp）
 
 ```c++
@@ -479,7 +494,9 @@ size_t charCount(const char* str, size_t size, const char ch) {
 }
 ```
 
-Base64编码时在末尾填充”=“。
+Base64编码时在末尾填充 “=”。
+
+
 
 
 
@@ -504,6 +521,8 @@ char* U2G(const char* utf8)//字符转换函数
 ```
 
 如果用户名或密码中有中文字符，直接输出会产生乱码，需要进行转码之后输出，才能正确显示。
+
+
 
 
 
