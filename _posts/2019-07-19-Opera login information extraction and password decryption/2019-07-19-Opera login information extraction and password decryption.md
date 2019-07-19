@@ -1,6 +1,6 @@
----
+﻿---
 title: Opera login information extraction and password decryption
-tags: C++ Decrypt VS2019 SQLite3 Opera
+tags: C++ Decrypt VS2019 Opera
 edit: 2019-07-19
 categories: C++ Technology
 status: Completed
