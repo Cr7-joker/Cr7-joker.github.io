@@ -111,6 +111,10 @@ string UDisk_Path(DWORD first) {
 
 **GetLogicalDrives()**函数：[GetLogicalDrives function](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-getlogicaldrives)
 
+函数返回值是一个long型，将其用二进制显示时，其中第0位表示A盘，第1位表示B盘，当某位为1时说明存在这个盘，即00000011表示有A盘和B盘。
+
+[位掩码(BitMask)的介绍与使用](https://www.jianshu.com/p/4e73512c03b8)
+
 
 
 
@@ -218,7 +222,7 @@ int main() {
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-23-C++%20U%20Disk%20content%20copy%20program/assert/04.png" width="70%">
 
-**注**：VS2019可能产生如下报错：
+# **注**：VS2019可能产生如下报错：
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-23-C++%20U%20Disk%20content%20copy%20program/assert/05.png" width="70%">
 
@@ -232,3 +236,7 @@ C语言的标准函数中，一些读取或写入内存的函数存在内存越�
 在项目**属性**—>**C/C++**—>**预处理器**—>**预处理器定义**中添加**_CRT_SECURE_NO_WARNINGS**即可不产生报错。
 
 <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-23-C++%20U%20Disk%20content%20copy%20program/assert/06.png" width="70%">
+
+# 项目文件已上传至GitHub
+
+[U Disk content copy program](https://github.com/Cr7-joker/U-Disk-content-copy-program)
