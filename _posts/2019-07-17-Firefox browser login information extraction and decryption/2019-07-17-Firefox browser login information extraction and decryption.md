@@ -41,7 +41,7 @@ Firefox用户可以在浏览器的设置中设定主密码，但关键是好多�
 
 **注**：您可以使用此项目解密Firefox上保存的用户名和密码。代码在Firefox 67.0.4 (x64 zh-CN)上测试。如果您将使用Firefox x86上的代码，则必须使用x86编译代码，您还必须更改x86的程序文件路径。
 
-## 头文件Firedox_decrypt.h
+## 头文件Firefox_decrypt.h
 
 ```c++
 #pragma once
@@ -127,7 +127,7 @@ char* U2G(const char* utf8);
 ## 获取Firefox安装路径模块（InstallatonPath_Get.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 #define MY_BUFSIZE 128 // Arbitrary initial value.
 // Dynamic allocation will be used.
 constexpr auto Get_failed = "get_InstallationPath Failed";
@@ -181,7 +181,7 @@ string getInstallationPath(){
 ## 动态加载库模块（Library_Load.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 // 动态加载库文件 
 HMODULE loadLibrary(string installationPath) {
 	const char nssLibraryName[] = "nss3.dll";	// 加载动态链接库文件nss.dll
@@ -202,7 +202,7 @@ HMODULE loadLibrary(string installationPath) {
 ## 获取库方法模块（DLL_Function.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 // Global Functions
 fpNSS_Init NSS_Init;
 fpPL_Base64Decode PL_Base64Decode;
@@ -271,7 +271,7 @@ FARPROC GetProcAddress(
 ## 获取保存登录信息文件路径模块（ProfilePath_Get.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 #include <ShlObj_core.h>
 constexpr auto Get_failed = "get_ProfilePath Failed";
 string getProfilePath() {
@@ -313,7 +313,7 @@ string getProfilePath() {
 ## 获取登录信息模块（Data_Get.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 // 获取logins.json中保存的登录信息
 char* getBuffer(string profilePath) {
 	profilePath = profilePath + "\\logins.json";
@@ -428,7 +428,7 @@ To perform this operation as a transacted operation, which results in a handle t
 ## 解密模块（Decrypt.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 unsigned char* decrypt(string encryptedString) {
 	// Base64解码
 	size_t szDecoded = encryptedString.size() / 4 * 3 - charCount(encryptedString.c_str(), encryptedString.size(), '=');
@@ -503,7 +503,7 @@ Base64编码时在末尾填充 “=”。
 ## 字符转换模块（UTF8_Trans.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 #pragma warning (disable:26451)
 char* U2G(const char* utf8)//字符转换函数
 {
@@ -529,7 +529,7 @@ char* U2G(const char* utf8)//字符转换函数
 ## 主模块（run.cpp）
 
 ```c++
-#include"Firedox_decrypt.h"
+#include"Firefox_decrypt.h"
 #include<regex>
 
 int main() {
