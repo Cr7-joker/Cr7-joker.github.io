@@ -121,13 +121,13 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    [Visual Studio 2017 Installer](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects)
 
-   1. 在解决方案中新建一个**Setup Project**项目
+2. 在解决方案中新建一个**Setup Project**项目
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/02.png" width="70%">
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/03.png" width="70%">
 
-2. 建立成功后，界面如下
+3. 建立成功后，界面如下
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/04.png" width="70%">
 
@@ -139,7 +139,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    3.“用户桌面”即"User's Desktop"表示：这个应用程序安装完，用户的桌面上的创建的.exe快捷方式。
 
-3. 右键“应用程序文件夹”—>“Add”—“文件”
+4. 右键“应用程序文件夹”—>“Add”—“文件”
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/05.png" width="70%">
 
@@ -153,7 +153,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/07.png" width="70%">
 
-4. 创建快捷方式
+5. 创建快捷方式
 
    右键主程序exe文件，选择“创建快捷方式到……”
 
@@ -167,7 +167,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/10.png" width="70%">
 
-5. 添加卸载程序
+6. 添加卸载程序
 
    既然有安装就有卸载，卸载程序其实是一个Windows操作系统自带的程序（`C：Windows\System32\Msiexec.exe`），只不过是通过给它传特殊的参数命令，来让它执行卸载
 
@@ -191,7 +191,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    <img src="https://raw.githubusercontent.com/Cr7-joker/Cr7-joker.github.io/master/_posts/2019-07-29-Browser%20user%20information%20Decrypt/assert/14.png" width="70%">
 
-6. 其他设置
+7. 其他设置
 
    如果还想对安装程序进行其他设置，比如，友化安装欢迎界面，自定制安装步骤，修改注册表，设置启动条件（比如要求必须先安装指定的.net FrameWork版本才可以启动）等，可以右键安装项目，在**View**中可以进行选择设置，如下
 
@@ -199,7 +199,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    有需要可以自行研究……
 
-7. 设置系统必备
+8. 设置系统必备
 
    一般我们开发的程序都有一个目标框架，也就是所依赖的**.net Framework**版本环境，如**.net Framework 2.0/3.5/4.0/4.5**等。
 
@@ -219,7 +219,7 @@ description: Get the login information (URL, login name, password, etc.) automat
 
    选择“**从组件供应商的网站上下载系统必备组件**”，这样一来，即使电脑上没有安装需要的**.net Framework**也不要紧，只要设置了这项，安装程序会自动从微软的官网上下载对应的组件并安装。
 
-8. 生成打包安装文件
+9. 生成打包安装文件
 
    右键安装项目，选择**重新生成**。
 
