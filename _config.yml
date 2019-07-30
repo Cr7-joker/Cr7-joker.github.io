@@ -45,6 +45,7 @@ highlighter: rouge
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
   
 
 permalink: none
